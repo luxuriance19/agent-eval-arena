@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-04-15T16:12:27.660054+08:00",
+  "interval_seconds": 5,
+  "series": {
+    "httpbin_uuid": {
+      "url": "https://httpbin.org/uuid",
+      "samples": [
+        {
+          "index": 1,
+          "fetched_at": "2026-04-15T16:12:27.660167+08:00",
+          "fetch_attempt": 1,
+          "url": "https://httpbin.org/uuid",
+          "value": "31a6e3a8-e8d5-400d-a8d2-170633684ea1",
+          "response": {
+            "uuid": "31a6e3a8-e8d5-400d-a8d2-170633684ea1"
+          },
+          "raw_body": "{\n  \"uuid\": \"31a6e3a8-e8d5-400d-a8d2-170633684ea1\"\n}\n"
+        },
+        {
+          "index": 2,
+          "fetched_at": "2026-04-15T16:12:34.450171+08:00",
+          "fetch_attempt": 1,
+          "url": "https://httpbin.org/uuid",
+          "value": "c944af9b-6779-40cf-b616-46ff9596aab3",
+          "response": {
+            "uuid": "c944af9b-6779-40cf-b616-46ff9596aab3"
+          },
+          "raw_body": "{\n  \"uuid\": \"c944af9b-6779-40cf-b616-46ff9596aab3\"\n}\n"
+        },
+        {
+          "index": 3,
+          "fetched_at": "2026-04-15T16:12:40.730678+08:00",
+          "fetch_attempt": 1,
+          "url": "https://httpbin.org/uuid",
+          "value": "bf547f32-0ee8-420b-9f72-5ee36799e1b5",
+          "response": {
+            "uuid": "bf547f32-0ee8-420b-9f72-5ee36799e1b5"
+          },
+          "raw_body": "{\n  \"uuid\": \"bf547f32-0ee8-420b-9f72-5ee36799e1b5\"\n}\n"
+        }
+      ],
+      "diffs": [
+        {
+          "from_index": 1,
+          "to_index": 2,
+          "from_timestamp": "2026-04-15T16:12:27.660167+08:00",
+          "to_timestamp": "2026-04-15T16:12:34.450171+08:00",
+          "from_value": "31a6e3a8-e8d5-400d-a8d2-170633684ea1",
+          "to_value": "c944af9b-6779-40cf-b616-46ff9596aab3",
+          "value_changed": true,
+          "changed_fields": [
+            {
+              "field": "uuid",
+              "type": "changed",
+              "old": "31a6e3a8-e8d5-400d-a8d2-170633684ea1",
+              "new": "c944af9b-6779-40cf-b616-46ff9596aab3"
+            }
+          ],
+          "diff_summary": "1 field(s) changed",
+          "unified_diff": [
+            "--- sample_1",
+            "+++ sample_2",
+            "@@ -1,3 +1,3 @@",
+            " {",
+            "-  \"uuid\": \"31a6e3a8-e8d5-400d-a8d2-170633684ea1\"",
+            "+  \"uuid\": \"c944af9b-6779-40cf-b616-46ff9596aab3\"",
+            " }"
+          ]
+        },
+        {
+          "from_index": 2,
+          "to_index": 3,
+          "from_timestamp": "2026-04-15T16:12:34.450171+08:00",
+          "to_timestamp": "2026-04-15T16:12:40.730678+08:00",
+          "from_value": "c944af9b-6779-40cf-b616-46ff9596aab3",
+          "to_value": "bf547f32-0ee8-420b-9f72-5ee36799e1b5",
+          "value_changed": true,
+          "changed_fields": [
+            {
+              "field": "uuid",
+              "type": "changed",
+              "old": "c944af9b-6779-40cf-b616-46ff9596aab3",
+              "new": "bf547f32-0ee8-420b-9f72-5ee36799e1b5"
+            }
+          ],
+          "diff_summary": "1 field(s) changed",
+          "unified_diff": [
+            "--- sample_2",
+            "+++ sample_3",
+            "@@ -1,3 +1,3 @@",
+            " {",
+            "-  \"uuid\": \"c944af9b-6779-40cf-b616-46ff9596aab3\"",
+            "+  \"uuid\": \"bf547f32-0ee8-420b-9f72-5ee36799e1b5\"",
+            " }"
+          ]
+        }
+      ],
+      "failures": [],
+      "status": "ok"
+    },
+    "worldtime_ny": {
+      "url": "https://worldtimeapi.org/api/timezone/America/New_York",
+      "samples": [],
+      "diffs": [],
+      "failures": [
+        {
+          "index": 1,
+          "url": "https://worldtimeapi.org/api/timezone/America/New_York",
+          "attempts": [
+            {
+              "ok": false,
+              "timestamp": "2026-04-15T16:12:42.424689+08:00",
+              "stderr": "curl: (35) Recv failure: Connection reset by peer",
+              "returncode": 35,
+              "attempt": 1
+            },
+            {
+              "ok": false,
+              "timestamp": "2026-04-15T16:12:43.993186+08:00",
+              "stderr": "curl: (35) Recv failure: Connection reset by peer",
+              "returncode": 35,
+              "attempt": 2
+            },
+            {
+              "ok": false,
+              "timestamp": "2026-04-15T16:12:46.460778+08:00",
+              "stderr": "curl: (35) Recv failure: Connection reset by peer",
+              "returncode": 35,
+              "attempt": 3
+            },
+            {
+              "ok": false,
+              "timestamp": "2026-04-15T16:12:49.968355+08:00",
+              "stderr": "curl: (35) Recv failure: Connection reset by peer",
+              "returncode": 35,
+              "attempt": 4
+            },
+            {
+              "ok": false,
+              "timestamp": "2026-04-15T16:12:53.557166+08:00",
+              "stderr": "curl: (35) Recv failure: Connection reset by peer",
+              "returncode": 35,
+              "attempt": 5
+            }
+          ],
+          "final_error": {
+            "ok": false,
+            "timestamp": "2026-04-15T16:12:53.557166+08:00",
+            "stderr": "curl: (35) Recv failure: Connection reset by peer",
+            "returncode": 35,
+            "attempt": 5
+          }
+        }
+      ],
+      "status": "failed"
+    }
+  }
+}

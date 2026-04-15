@@ -1,0 +1,62 @@
+{
+  "task-1": {
+    "duration_seconds": 343,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T07:19:15Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/hermes/task-1.log"
+  },
+  "task-2a": {
+    "duration_seconds": 132,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T07:29:44Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/hermes/task-2a.log"
+  },
+  "task-2b": {
+    "duration_seconds": 68,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T07:35:04Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/hermes/task-2b.log"
+  },
+  "task-2d": {
+    "duration_seconds": 284,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T07:43:21Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/hermes/task-2d.log"
+  },
+  "task-2c": {
+    "duration_seconds": 287,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T07:43:24Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/hermes/task-2c.log"
+  },
+  "task-3a": {
+    "duration_seconds": 139,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T08:11:22Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/hermes/task-3a.log"
+  },
+  "task-3c": {
+    "duration_seconds": 249,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T08:13:17Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/hermes/task-3c.log"
+  },
+  "task-3b": {
+    "duration_seconds": 267,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T08:13:30Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/hermes/task-3b.log"
+  },
+  "task-4a": {
+    "duration_seconds": 111,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T08:24:56Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/hermes/task-4a.log"
+  },
+  "task-4c": {
+    "duration_seconds": 1026,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T08:40:11Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/hermes/task-4c.log"
+  }
+}

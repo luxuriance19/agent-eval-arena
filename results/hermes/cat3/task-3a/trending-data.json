@@ -1,0 +1,480 @@
+{
+  "generated_at": "2026-04-15T16:10:04+08:00",
+  "source_urls": {
+    "today": "https://github.com/trending",
+    "week": "https://github.com/trending?since=weekly",
+    "month": "https://github.com/trending?since=monthly"
+  },
+  "timeframes": {
+    "today": [
+      {
+        "rank": 1,
+        "owner": "forrestchang",
+        "name": "andrej-karpathy-skills",
+        "full_name": "forrestchang/andrej-karpathy-skills",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+        "language": null,
+        "total_stars": 37191,
+        "period_stars": 9263,
+        "forks": 3037,
+        "timeframe": "today",
+        "url": "https://github.com/forrestchang/andrej-karpathy-skills"
+      },
+      {
+        "rank": 2,
+        "owner": "thedotmack",
+        "name": "claude-mem",
+        "full_name": "thedotmack/claude-mem",
+        "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions.",
+        "language": "TypeScript",
+        "total_stars": 56513,
+        "period_stars": 2997,
+        "forks": 4556,
+        "timeframe": "today",
+        "url": "https://github.com/thedotmack/claude-mem"
+      },
+      {
+        "rank": 3,
+        "owner": "jamiepine",
+        "name": "voicebox",
+        "full_name": "jamiepine/voicebox",
+        "description": "The open-source voice synthesis studio",
+        "language": "TypeScript",
+        "total_stars": 17705,
+        "period_stars": 1162,
+        "forks": 2061,
+        "timeframe": "today",
+        "url": "https://github.com/jamiepine/voicebox"
+      },
+      {
+        "rank": 4,
+        "owner": "pascalorg",
+        "name": "editor",
+        "full_name": "pascalorg/editor",
+        "description": "Create and share 3D architectural projects.",
+        "language": "TypeScript",
+        "total_stars": 12012,
+        "period_stars": 820,
+        "forks": 1501,
+        "timeframe": "today",
+        "url": "https://github.com/pascalorg/editor"
+      },
+      {
+        "rank": 5,
+        "owner": "microsoft",
+        "name": "markitdown",
+        "full_name": "microsoft/markitdown",
+        "description": "Python tool for converting files and office documents to Markdown.",
+        "language": "Python",
+        "total_stars": 108937,
+        "period_stars": 1675,
+        "forks": 6917,
+        "timeframe": "today",
+        "url": "https://github.com/microsoft/markitdown"
+      },
+      {
+        "rank": 6,
+        "owner": "obra",
+        "name": "superpowers",
+        "full_name": "obra/superpowers",
+        "description": "An agentic skills framework & software development methodology that works.",
+        "language": "Shell",
+        "total_stars": 153038,
+        "period_stars": 1919,
+        "forks": 13281,
+        "timeframe": "today",
+        "url": "https://github.com/obra/superpowers"
+      },
+      {
+        "rank": 7,
+        "owner": "chrislgarry",
+        "name": "Apollo-11",
+        "full_name": "chrislgarry/Apollo-11",
+        "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+        "language": "Assembly",
+        "total_stars": 66537,
+        "period_stars": 472,
+        "forks": 7590,
+        "timeframe": "today",
+        "url": "https://github.com/chrislgarry/Apollo-11"
+      },
+      {
+        "rank": 8,
+        "owner": "virattt",
+        "name": "ai-hedge-fund",
+        "full_name": "virattt/ai-hedge-fund",
+        "description": "An AI Hedge Fund Team",
+        "language": "Python",
+        "total_stars": 54504,
+        "period_stars": 1007,
+        "forks": 9454,
+        "timeframe": "today",
+        "url": "https://github.com/virattt/ai-hedge-fund"
+      },
+      {
+        "rank": 9,
+        "owner": "shiyu-coder",
+        "name": "Kronos",
+        "full_name": "shiyu-coder/Kronos",
+        "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+        "language": "Python",
+        "total_stars": 17979,
+        "period_stars": 963,
+        "forks": 3332,
+        "timeframe": "today",
+        "url": "https://github.com/shiyu-coder/Kronos"
+      },
+      {
+        "rank": 10,
+        "owner": "NousResearch",
+        "name": "hermes-agent",
+        "full_name": "NousResearch/hermes-agent",
+        "description": "The agent that grows with you",
+        "language": "Python",
+        "total_stars": 86757,
+        "period_stars": 8301,
+        "forks": 11747,
+        "timeframe": "today",
+        "url": "https://github.com/NousResearch/hermes-agent"
+      }
+    ],
+    "week": [
+      {
+        "rank": 1,
+        "owner": "forrestchang",
+        "name": "andrej-karpathy-skills",
+        "full_name": "forrestchang/andrej-karpathy-skills",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+        "language": null,
+        "total_stars": 37191,
+        "period_stars": 21795,
+        "forks": 3037,
+        "timeframe": "week",
+        "url": "https://github.com/forrestchang/andrej-karpathy-skills"
+      },
+      {
+        "rank": 2,
+        "owner": "NousResearch",
+        "name": "hermes-agent",
+        "full_name": "NousResearch/hermes-agent",
+        "description": "The agent that grows with you",
+        "language": "Python",
+        "total_stars": 86757,
+        "period_stars": 52996,
+        "forks": 11747,
+        "timeframe": "week",
+        "url": "https://github.com/NousResearch/hermes-agent"
+      },
+      {
+        "rank": 3,
+        "owner": "multica-ai",
+        "name": "multica",
+        "full_name": "multica-ai/multica",
+        "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
+        "language": "TypeScript",
+        "total_stars": 12868,
+        "period_stars": 9823,
+        "forks": 1578,
+        "timeframe": "week",
+        "url": "https://github.com/multica-ai/multica"
+      },
+      {
+        "rank": 4,
+        "owner": "coleam00",
+        "name": "Archon",
+        "full_name": "coleam00/Archon",
+        "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
+        "language": "TypeScript",
+        "total_stars": 18043,
+        "period_stars": 4024,
+        "forks": 2832,
+        "timeframe": "week",
+        "url": "https://github.com/coleam00/Archon"
+      },
+      {
+        "rank": 5,
+        "owner": "HKUDS",
+        "name": "DeepTutor",
+        "full_name": "HKUDS/DeepTutor",
+        "description": "\"DeepTutor: Agent-Native Personalized Learning Assistant\"",
+        "language": "Python",
+        "total_stars": 18244,
+        "period_stars": 6401,
+        "forks": 2401,
+        "timeframe": "week",
+        "url": "https://github.com/HKUDS/DeepTutor"
+      },
+      {
+        "rank": 6,
+        "owner": "microsoft",
+        "name": "markitdown",
+        "full_name": "microsoft/markitdown",
+        "description": "Python tool for converting files and office documents to Markdown.",
+        "language": "Python",
+        "total_stars": 108937,
+        "period_stars": 14615,
+        "forks": 6917,
+        "timeframe": "week",
+        "url": "https://github.com/microsoft/markitdown"
+      },
+      {
+        "rank": 7,
+        "owner": "google-ai-edge",
+        "name": "gallery",
+        "full_name": "google-ai-edge/gallery",
+        "description": "A gallery that showcases on-device ML/GenAI use cases and allows people to try and use models locally.",
+        "language": "Kotlin",
+        "total_stars": 21100,
+        "period_stars": 2671,
+        "forks": 2001,
+        "timeframe": "week",
+        "url": "https://github.com/google-ai-edge/gallery"
+      },
+      {
+        "rank": 8,
+        "owner": "thedotmack",
+        "name": "claude-mem",
+        "full_name": "thedotmack/claude-mem",
+        "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions.",
+        "language": "TypeScript",
+        "total_stars": 56513,
+        "period_stars": 8742,
+        "forks": 4556,
+        "timeframe": "week",
+        "url": "https://github.com/thedotmack/claude-mem"
+      },
+      {
+        "rank": 9,
+        "owner": "TapXWorld",
+        "name": "ChinaTextbook",
+        "full_name": "TapXWorld/ChinaTextbook",
+        "description": "所有小初高、大学PDF教材。",
+        "language": "Roff",
+        "total_stars": 69420,
+        "period_stars": 2561,
+        "forks": 15498,
+        "timeframe": "week",
+        "url": "https://github.com/TapXWorld/ChinaTextbook"
+      },
+      {
+        "rank": 10,
+        "owner": "TheCraigHewitt",
+        "name": "seomachine",
+        "full_name": "TheCraigHewitt/seomachine",
+        "description": "A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.",
+        "language": "Python",
+        "total_stars": 6248,
+        "period_stars": 2562,
+        "forks": 860,
+        "timeframe": "week",
+        "url": "https://github.com/TheCraigHewitt/seomachine"
+      }
+    ],
+    "month": [
+      {
+        "rank": 1,
+        "owner": "NousResearch",
+        "name": "hermes-agent",
+        "full_name": "NousResearch/hermes-agent",
+        "description": "The agent that grows with you",
+        "language": "Python",
+        "total_stars": 86757,
+        "period_stars": 76339,
+        "forks": 11747,
+        "timeframe": "month",
+        "url": "https://github.com/NousResearch/hermes-agent"
+      },
+      {
+        "rank": 2,
+        "owner": "mattpocock",
+        "name": "skills",
+        "full_name": "mattpocock/skills",
+        "description": "My personal directory of skills, straight from my .claude directory.",
+        "language": "Shell",
+        "total_stars": 15112,
+        "period_stars": 13952,
+        "forks": 1226,
+        "timeframe": "month",
+        "url": "https://github.com/mattpocock/skills"
+      },
+      {
+        "rank": 3,
+        "owner": "Crosstalk-Solutions",
+        "name": "project-nomad",
+        "full_name": "Crosstalk-Solutions/project-nomad",
+        "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
+        "language": "TypeScript",
+        "total_stars": 23732,
+        "period_stars": 23194,
+        "forks": 2315,
+        "timeframe": "month",
+        "url": "https://github.com/Crosstalk-Solutions/project-nomad"
+      },
+      {
+        "rank": 4,
+        "owner": "FujiwaraChoki",
+        "name": "MoneyPrinterV2",
+        "full_name": "FujiwaraChoki/MoneyPrinterV2",
+        "description": "Automate the process of making money online.",
+        "language": "Python",
+        "total_stars": 29606,
+        "period_stars": 14719,
+        "forks": 3174,
+        "timeframe": "month",
+        "url": "https://github.com/FujiwaraChoki/MoneyPrinterV2"
+      },
+      {
+        "rank": 5,
+        "owner": "siddharthvaddem",
+        "name": "openscreen",
+        "full_name": "siddharthvaddem/openscreen",
+        "description": "Create stunning demos for free. Open-source, no subscriptions, no watermarks, and free for commercial use. An alternative to Screen Studio.",
+        "language": "TypeScript",
+        "total_stars": 29893,
+        "period_stars": 21866,
+        "forks": 2031,
+        "timeframe": "month",
+        "url": "https://github.com/siddharthvaddem/openscreen"
+      },
+      {
+        "rank": 6,
+        "owner": "bytedance",
+        "name": "deer-flow",
+        "full_name": "bytedance/deer-flow",
+        "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+        "language": "Python",
+        "total_stars": 61645,
+        "period_stars": 31482,
+        "forks": 7933,
+        "timeframe": "month",
+        "url": "https://github.com/bytedance/deer-flow"
+      },
+      {
+        "rank": 7,
+        "owner": "jarrodwatts",
+        "name": "claude-hud",
+        "full_name": "jarrodwatts/claude-hud",
+        "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
+        "language": "JavaScript",
+        "total_stars": 19275,
+        "period_stars": 14720,
+        "forks": 860,
+        "timeframe": "month",
+        "url": "https://github.com/jarrodwatts/claude-hud"
+      },
+      {
+        "rank": 8,
+        "owner": "mvanhorn",
+        "name": "last30days-skill",
+        "full_name": "mvanhorn/last30days-skill",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+        "language": "Python",
+        "total_stars": 21968,
+        "period_stars": 17814,
+        "forks": 1796,
+        "timeframe": "month",
+        "url": "https://github.com/mvanhorn/last30days-skill"
+      },
+      {
+        "rank": 9,
+        "owner": "google-ai-edge",
+        "name": "gallery",
+        "full_name": "google-ai-edge/gallery",
+        "description": "A gallery that showcases on-device ML/GenAI use cases and allows people to try and use models locally.",
+        "language": "Kotlin",
+        "total_stars": 21100,
+        "period_stars": 5745,
+        "forks": 2001,
+        "timeframe": "month",
+        "url": "https://github.com/google-ai-edge/gallery"
+      },
+      {
+        "rank": 10,
+        "owner": "affaan-m",
+        "name": "everything-claude-code",
+        "full_name": "affaan-m/everything-claude-code",
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "language": "JavaScript",
+        "total_stars": 156593,
+        "period_stars": 81407,
+        "forks": 24308,
+        "timeframe": "month",
+        "url": "https://github.com/affaan-m/everything-claude-code"
+      }
+    ]
+  },
+  "cross_reference": {
+    "multi_timeframe_repos": {
+      "NousResearch/hermes-agent": [
+        "today",
+        "week",
+        "month"
+      ],
+      "forrestchang/andrej-karpathy-skills": [
+        "today",
+        "week"
+      ],
+      "google-ai-edge/gallery": [
+        "week",
+        "month"
+      ],
+      "microsoft/markitdown": [
+        "today",
+        "week"
+      ],
+      "thedotmack/claude-mem": [
+        "today",
+        "week"
+      ]
+    },
+    "repos_in_all_three": [
+      "NousResearch/hermes-agent"
+    ],
+    "rising_stars": [
+      "forrestchang/andrej-karpathy-skills",
+      "thedotmack/claude-mem",
+      "jamiepine/voicebox",
+      "pascalorg/editor",
+      "microsoft/markitdown",
+      "obra/superpowers",
+      "chrislgarry/Apollo-11",
+      "virattt/ai-hedge-fund",
+      "shiyu-coder/Kronos"
+    ]
+  },
+  "language_breakdown": {
+    "overall": {
+      "Unknown": 2,
+      "TypeScript": 8,
+      "Python": 12,
+      "Shell": 2,
+      "Assembly": 1,
+      "Kotlin": 2,
+      "Roff": 1,
+      "JavaScript": 2
+    },
+    "by_timeframe": {
+      "today": {
+        "Unknown": 1,
+        "TypeScript": 3,
+        "Python": 4,
+        "Shell": 1,
+        "Assembly": 1
+      },
+      "week": {
+        "Unknown": 1,
+        "Python": 4,
+        "TypeScript": 3,
+        "Kotlin": 1,
+        "Roff": 1
+      },
+      "month": {
+        "Python": 4,
+        "Shell": 1,
+        "TypeScript": 2,
+        "JavaScript": 2,
+        "Kotlin": 1
+      }
+    }
+  }
+}

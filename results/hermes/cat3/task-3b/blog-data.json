@@ -1,0 +1,131 @@
+{
+  "source": "https://blog.pragmaticengineer.com/",
+  "fallback_used": false,
+  "scraped_at_utc": "2026-04-15T08:13:11.475310+00:00",
+  "ten_most_recent_articles": [
+    {
+      "title": "The Pulse: is GitHub still best for AI-native development?",
+      "publication_date": "Fri, 03 Apr 2026 15:03:38 GMT",
+      "preview_text": "Availability has dropped to one nine (~90% – !!), partly due to not being able to handle increased traffic from AI coding agents. There’s also no CEO and an apparent lack of direction.",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-is-github-still-best-for-ai-native-development/"
+    },
+    {
+      "title": "Is the FDE role becoming less desirable?",
+      "publication_date": "Fri, 27 Mar 2026 10:29:33 GMT",
+      "preview_text": "Job postings for Forward Deployed Engineers (FDEs) have surged, but many professionals don’t want the role because it’s more like solutions engineering than software development.",
+      "url": "https://blog.pragmaticengineer.com/is-the-fde-role-becoming-less-desirable/"
+    },
+    {
+      "title": "The Pulse: Cloudflare rewrites Next.js as AI rewrites commercial open source",
+      "publication_date": "Thu, 05 Mar 2026 18:03:16 GMT",
+      "preview_text": "An engineer at Cloudflare rewrote most of Vercel’s Next.js in one week with AI agents. It looks like a sign of how AI will disrupt existing moats and business models. Analysis",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-cloudflare-rewrites-next-js-as-ai-rewrites-commercial-open-source/"
+    },
+    {
+      "title": "I replaced a $120/year micro-SaaS in 20 minutes with LLM-generated code",
+      "publication_date": "Thu, 29 Jan 2026 18:41:45 GMT",
+      "preview_text": "I used to pay $120/year for a SaaS that hasn’t added new features in four years, and didn’t fix its broken billing system for three years. Using an LLM, I managed to rewrite all the functionality I used to pay for in 20 minutes. Is this bad news for “write once, don’t update later” SaaS?",
+      "url": "https://blog.pragmaticengineer.com/i-replaced-a-120-year-micro-saas-in-20-minutes-with-llm-generated-code/"
+    },
+    {
+      "title": "The grief when AI writes most of the code",
+      "publication_date": "Wed, 07 Jan 2026 18:53:57 GMT",
+      "preview_text": "When AI writes almost all code, what happens to software engineering? There is grief involved for us developers, that's for sure.",
+      "url": "https://blog.pragmaticengineer.com/the-grief-when-ai-writes-most-of-the-code/"
+    },
+    {
+      "title": "The Pulse: Cloudflare’s latest outage proves dangers of global configuration changes (again)",
+      "publication_date": "Thu, 18 Dec 2025 17:44:21 GMT",
+      "preview_text": "Deja vu: a large Cloudflare outage caused by an instantly rolled-out global config change – two weeks after a similar problem",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-cloudflares-latest-outage/"
+    },
+    {
+      "title": "The Pulse: Could a 5-day RTO be around the corner for Big Tech?",
+      "publication_date": "Sat, 13 Dec 2025 15:21:25 GMT",
+      "preview_text": "From next February, workers at Instagram must be in the office, five days a week. This makes Meta the second tech giant after Amazon to mandate a 5-day RTO. Will more big companies do the same?",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-could-a-5-day-rto-be-around-the-corner-for-big-tech/"
+    },
+    {
+      "title": "Downdetector and the real cost of no upstream dependencies",
+      "publication_date": "Fri, 05 Dec 2025 09:14:50 GMT",
+      "preview_text": "During the Cloudflare outage, Downdetector was also unavailable. I got details from the team about why they have a hard dependency on Cloudflare, and why that won’t change anytime soon.",
+      "url": "https://blog.pragmaticengineer.com/downdetector-and-the-real-cost-of-no-upstream-dependencies/"
+    },
+    {
+      "title": "A startup in Mongolia translated my book",
+      "publication_date": "Fri, 21 Nov 2025 13:47:17 GMT",
+      "preview_text": "A 30-person startup called Nasha Tech translated The Software Engineer's Guidebook for the benefit of their company and the Mongolian tech ecosystem.",
+      "url": "https://blog.pragmaticengineer.com/traveling-to-mongolia/"
+    },
+    {
+      "title": "The Pulse: Cloudflare takes down half the internet – but shares a great postmortem",
+      "publication_date": "Thu, 20 Nov 2025 20:36:19 GMT",
+      "preview_text": "A database permissions change ended up knocking Cloudflare’s proxy offline. Pinpointing the root cause was tricky – but Cloudflare shared a detailed postmortem. Also: announcing The Pragmatic Summit",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-cloudflare-takes-down-half-the-internet/"
+    }
+  ],
+  "three_most_recent_article_details": [
+    {
+      "url": "https://blog.pragmaticengineer.com/the-pulse-is-github-still-best-for-ai-native-development/",
+      "full_title": "The Pulse: is GitHub still best for AI-native development?",
+      "publication_date": "2026-04-03T15:03:38.000Z",
+      "word_count": 1414,
+      "estimated_reading_time_minutes": 5.7,
+      "explicit_tags": [],
+      "key_topics": [
+        "AI-native development",
+        "AI coding agents",
+        "GitHub",
+        "GitHub reliability",
+        "pulse",
+        "best"
+      ],
+      "body_text_first_500_chars": "We’re used to highly reliable systems which target four-nines of availability (99.99%, meaning about 52 minutes of downtime per year), and for it to be embarrassing to barely hit three nines (around 9 hours of downtime per year.) And yet, in the past month, GitHub’s reliability is down to one nine! Here’s data from the third-party, “ missing GitHub status page ”, which was built after GitHub stopped updating its own status page due to terrible availability. Recently, things have looked poor: Git"
+    },
+    {
+      "url": "https://blog.pragmaticengineer.com/is-the-fde-role-becoming-less-desirable/",
+      "full_title": "Is the FDE role becoming less desirable?",
+      "publication_date": "2026-03-27T10:29:33.000Z",
+      "word_count": 520,
+      "estimated_reading_time_minutes": 2.1,
+      "explicit_tags": [],
+      "key_topics": [
+        "Forward Deployed Engineers",
+        "software engineering roles",
+        "role",
+        "FDE",
+        "becoming",
+        "desirable"
+      ],
+      "body_text_first_500_chars": "An interesting trend highlighted by The Wall Street Journal : companies want to hire for FDE roles, but devs are just not that interested: “Job postings on Indeed grew more than 10-fold in 2025 compared with 2024. The number of public company transcripts mentioning the role jumped to 50 from eight over the same period, according to data from AlphaSense. The only problem? Few engineers want the job, which has historically been seen as demanding, undesirable, and less prestigious than product-focu"
+    },
+    {
+      "url": "https://blog.pragmaticengineer.com/the-pulse-cloudflare-rewrites-next-js-as-ai-rewrites-commercial-open-source/",
+      "full_title": "The Pulse: Cloudflare rewrites Next.js as AI rewrites commercial open source",
+      "publication_date": "2026-03-05T18:03:16.000Z",
+      "word_count": 3791,
+      "estimated_reading_time_minutes": 15.2,
+      "explicit_tags": [],
+      "key_topics": [
+        "AI coding agents",
+        "Cloudflare",
+        "Next.js",
+        "commercial open source",
+        "business models",
+        "Vercel"
+      ],
+      "body_text_first_500_chars": "to get issues like this in your inbox. Today’s issue of The Pulse focuses on a single event because it’s a significant one with major potential ripple effects. On Tuesday, Cloudflare shocked the dev world by announcing that they have rewritten Next.js in just one week, with a single developer who used only $1,100 in tokens: Cloudflare CTO Dane Knecht on X There are several layers to dig into here: The Next.js ecosystem: a recap . Close to half of React devs use Next.js, and the best place to dep"
+    }
+  ],
+  "common_themes": [
+    "AI is reshaping software development, coding workflows, and product/business moats.",
+    "Infrastructure reliability and platform dependency risk are recurring concerns.",
+    "The changing nature of software engineering roles and workplace expectations appears repeatedly.",
+    "Several posts examine how new tooling pressures existing software business models."
+  ],
+  "notes": [
+    "Recent article ordering and preview text were sourced from the site RSS feed.",
+    "Estimated reading time is calculated as word_count / 250.",
+    "The site did not expose obvious per-article tags for these posts, so key_topics are inferred from title, description, and article text."
+  ]
+}

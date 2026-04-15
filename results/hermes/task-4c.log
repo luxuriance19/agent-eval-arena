@@ -1,0 +1,282 @@
+========================================
+Agent: hermes
+Task:  task-4c
+Command: hermes chat -q Find a trending Python repository on GitHub and submit a meaningful improvement PR:
+
+1. Visit https://github.com/trending/python?since=daily
+2. Examine 3-5 repositories looking for genuine improvement opportunities:
+   - Typos in README or documentation
+   - Missing type annotations
+   - Missing or incomplete tests
+   - Small bugs or edge cases
+3. When you find a real improvement opportunity:
+   a. Fork the repository (using gh CLI as luxuriance19)
+   b. Clone the fork to /Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/
+   c. Create a descriptive branch name
+   d. Make the fix with a clear commit message
+   e. Push to the fork
+   f. Create a Pull Request with clear title and body
+4. Report the PR URL
+
+IMPORTANT: The fix must be genuine and helpful. Do NOT submit trivial or spam PRs.
+
+Save results to /Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-result.json -Q --max-turns 30
+Start: 2026-04-15 16:23:05
+========================================
+  ┊ 💬 I’m inspecting the provided workspace path and locating the markitdown repo contents now.
+  ┊ 💬 The exact task directory looks empty, so I’m discovering where the cloned repository actually lives under the given workspace hierarchy.
+  ┊ 💬 The repo is not present locally under the provided task directory, so I’m cloning microsoft/markitdown into that exact workspace path for inspection.
+  ┊ 💬 I hit a non-empty-directory clone error, so I’m checking the actual hidden contents of the task directory before proceeding.
+  ┊ 💬 I found a nested workspace directory and am checking whether that contains the actual repository.
+  ┊ 💬 The nested directory is not the target repo, so I’m cloning markitdown into a subdirectory under the provided workspace for inspection.
+  ┊ 💬 I have the repo locally now and I’m scanning README/docs/tests for small, verifiable improvement opportunities.
+  ┊ 💬 I’m narrowing this down by checking for obvious doc issues and small edge-case/test gaps in the Python package.
+  ┊ 💬 I’m reading the main README and the core misc tests to compare documented behavior against covered behavior.
+  ┊ 💬 I’m checking small utility code paths, since they often have safe edge-case fixes with easy tests.
+  ┊ 💬 I’m checking whether these utility behaviors are already covered in tests, so I don’t recommend something that’s already handled.
+  ┊ 💬 I’m doing a more targeted search in the specific files to confirm coverage and spot the cleanest improvement candidate.
+  ┊ 💬 I’m checking one likely edge-case area from the README breaking-change note: whether text streams and related source-type paths are actually tested.
+  ┊ 💬 I found a plausible HTTP edge case in response filename parsing, and I’m verifying whether the code/tests currently miss it.
+  ┊ 💬 I’m reading the response-related tests directly to confirm whether Content-Disposition parsing is covered at all.
+  ┊ 💬 I’m verifying whether the clone/install docs consistently use the less accessible SSH URL, since that would be a very safe README fix.
+  ┊ 💬 I’m reading the package-level README as well, in case the installation docs differ there.
+  ┊ 💬 I’m validating the response-header edge case with a quick live repro against the current code, so the recommendation is grounded in actual behavior.
+  ✓ [2/3] Inspect virattt/ai-hedge-fund for a smal  (195.96s)
+  ┊ 💬 The import path needed package deps, so I’m reproducing just the current filename-parsing logic directly from the source snippet instead.
+  ┊ 💬 I’m confirming the test gap around this header-parsing path before recommending it as the best PR target.
+  ✓ [1/3] Inspect microsoft/markitdown for a small  (287.01s)
+  ✓ [3/3] Inspect hugohe3/ppt-master for a small,   (496.75s)
+
+  ⚠️  DANGEROUS COMMAND: recursive delete
+      set -e
+cd /Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace
+if gh repo view luxuriance19/markitdown >/dev/null 2>&1; then
+  echo FORK_EXISTS
+else
+  gh repo fork microsoft/markitdown --clone=false
+fi
+rm -rf markitdown
+gh repo clone luxuriance19/markitdown markitdown
+cd markitdown
+git remote add upstream https://github.com/microsoft/markitdown.git 2>/dev/null || true
+git remote -v
+
+      [o]nce  |  [s]ession  |  [a]lways  |  [d]eny
+
+      Choice [o/s/a/D]:       ✗ Denied
+
+  ┊ review diff
+a//Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/markitdown-fork/packages/markitdown/src/markitdown/_markitdown.py → b//Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/markitdown-fork/packages/markitdown/src/markitdown/_markitdown.py
+@@ -9,7 +9,7 @@
+ from importlib.metadata import entry_points
+ from typing import Any, List, Dict, Optional, Union, BinaryIO
+ from pathlib import Path
+-from urllib.parse import urlparse
++from urllib.parse import unquote, urlparse
+ from warnings import warn
+ import requests
+ import magika
+  ┊ review diff
+a//Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/markitdown-fork/packages/markitdown/src/markitdown/_markitdown.py → b//Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/markitdown-fork/packages/markitdown/src/markitdown/_markitdown.py
+@@ -79,10 +79,30 @@
+             tb = traceback.format_exc()
+             warn(f"Plugin '{entry_point.name}' failed to load ... skipping:\n{tb}")
+ 
+-    return _plugins
+-
+-
+-@dataclass(kw_only=True, frozen=True)
++PRIORITY_GENERIC_FILE_FORMAT = 10
++
++
++def _get_content_disposition_filename(content_disposition: str) -> Optional[str]:
++    encoded_match = re.search(r"filename\*=([^;]+)", content_disposition, flags=re.IGNORECASE)
++    if encoded_match:
++        encoded_filename = encoded_match.group(1).strip().strip("\"'")
++        encoded_parts = encoded_filename.split("'", 2)
++        if len(encoded_parts) == 3:
++            charset, _, encoded_value = encoded_parts
++            try:
++                return unquote(encoded_value, encoding=charset or "utf-8")
++            except LookupError:
++                return unquote(encoded_value)
++        return unquote(encoded_filename)
++
++    basic_match = re.search(r"filename=([^;]+)", content_disposition, flags=re.IGNORECASE)
++    if basic_match:
++        return basic_match.group(1).strip().strip("\"'")
++
++    return None
++
++
++@dataclass
+ class ConverterRegistration:
+     """A registration of a converter with its priority and other metadata."""
+ 
+  ┊ review diff
+a//Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/markitdown-fork/packages/markitdown/src/markitdown/_markitdown.py → b//Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/markitdown-fork/packages/markitdown/src/markitdown/_markitdown.py
+@@ -78,6 +78,9 @@
+         except Exception:
+             tb = traceback.format_exc()
+             warn(f"Plugin '{entry_point.name}' failed to load ... skipping:\n{tb}")
++
++    return _plugins
++
+ 
+ PRIORITY_GENERIC_FILE_FORMAT = 10
+ 
+  ┊ review diff
+a//Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/markitdown-fork/packages/markitdown/src/markitdown/_markitdown.py → b//Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/markitdown-fork/packages/markitdown/src/markitdown/_markitdown.py
+@@ -105,7 +105,7 @@
+     return None
+ 
+ 
+-@dataclass
++@dataclass(kw_only=True, frozen=True)
+ class ConverterRegistration:
+     """A registration of a converter with its priority and other metadata."""
+ 
+  ┊ review diff
+a//Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/markitdown-fork/packages/markitdown/src/markitdown/_markitdown.py → b//Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/markitdown-fork/packages/markitdown/src/markitdown/_markitdown.py
+@@ -512,9 +512,10 @@
+         filename: Optional[str] = None
+         extension: Optional[str] = None
+         if "content-disposition" in response.headers:
+-            m = re.search(r"filename=([^;]+)", response.headers["content-disposition"])
+-            if m:
+-                filename = m.group(1).strip("\"'")
++            filename = _get_content_disposition_filename(
++                response.headers["content-disposition"]
++            )
++            if filename:
+                 _, _extension = os.path.splitext(filename)
+                 if len(_extension) > 0:
+                     extension = _extension
+
+╭─ ⚕ Hermes ───────────────────────────────────────────────────────────────────╮
+⚠️  Reached maximum iterations (30). Requesting summary...
+I examined 3 trending Python repositories and found real improvement opportunities:
+
+1. microsoft/markitdown
+- Best opportunity: support RFC 5987 Content-Disposition filenames like filename*=UTF-8''report%20final.pdf in convert_response().
+- Why it matters: current code only parses filename=..., so it can miss real downloaded filenames/extensions and weaken converter selection.
+- Missing coverage: no existing tests for this header parsing path.
+
+2. virattt/ai-hedge-fund
+- Real docs bug: backend startup instructions tell users to run uvicorn from app/backend, but that breaks imports because main.py imports app.backend....
+- Also references dependency files that do not exist in that subdirectory.
+- This is a genuine first-run docs failure.
+
+3. hugohe3/ppt-master
+- Real bug: skills/ppt-master/scripts/svg_finalize/crop_images.py uses argparse in main() but does not import argparse.
+- Effect: the standalone CLI script fails before it can run properly.
+
+I selected microsoft/markitdown as the best PR candidate because it is a meaningful behavior fix with testable impact.
+
+What I completed
+- Verified GitHub auth for account luxuriance19.
+- Opened the trending Python page and surveyed 3 repositories.
+- Forked microsoft/markitdown to luxuriance19/markitdown.
+- Cloned the fork into:
+  /Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/markitdown-fork
+- Added upstream remote and created branch:
+  fix/content-disposition-filename-star
+- Set up a local virtual environment and installed the package editable for testing.
+
+Code changes I already made locally
+- In packages/markitdown/src/markitdown/_markitdown.py:
+  - imported unquote from urllib.parse
+  - added a helper:
+    _get_content_disposition_filename(...)
+  - updated convert_response() to use that helper instead of only matching filename=
+
+Important note
+- I did not finish the workflow yet.
+- I have not yet:
+  - added the regression test
+  - run verification/tests
+  - committed
+  - pushed
+  - opened the PR
+  - written pr-result.json
+
+Also, while editing, I briefly introduced two unintended changes in the same file and then fixed them:
+- restored return _plugins
+- restored @dataclass(kw_only=True, frozen=True) on ConverterRegistration
+
+So the intended remaining work is:
+1. add a focused test for filename* handling
+2. run the relevant pytest target
+3. commit
+4. push
+5. open the PR
+6. save the PR URL to:
+   /Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-result.json
+
+I examined 3 trending Python repositories and found real improvement opportunities:
+
+1. microsoft/markitdown
+- Best opportunity: support RFC 5987 Content-Disposition filenames like filename*=UTF-8''report%20final.pdf in convert_response().
+- Why it matters: current code only parses filename=..., so it can miss real downloaded filenames/extensions and weaken converter selection.
+- Missing coverage: no existing tests for this header parsing path.
+
+2. virattt/ai-hedge-fund
+- Real docs bug: backend startup instructions tell users to run uvicorn from app/backend, but that breaks imports because main.py imports app.backend....
+- Also references dependency files that do not exist in that subdirectory.
+- This is a genuine first-run docs failure.
+
+3. hugohe3/ppt-master
+- Real bug: skills/ppt-master/scripts/svg_finalize/crop_images.py uses argparse in main() but does not import argparse.
+- Effect: the standalone CLI script fails before it can run properly.
+
+I selected microsoft/markitdown as the best PR candidate because it is a meaningful behavior fix with testable impact.
+
+What I completed
+- Verified GitHub auth for account luxuriance19.
+- Opened the trending Python page and surveyed 3 repositories.
+- Forked microsoft/markitdown to luxuriance19/markitdown.
+- Cloned the fork into:
+  /Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-workspace/markitdown-fork
+- Added upstream remote and created branch:
+  fix/content-disposition-filename-star
+- Set up a local virtual environment and installed the package editable for testing.
+
+Code changes I already made locally
+- In packages/markitdown/src/markitdown/_markitdown.py:
+  - imported unquote from urllib.parse
+  - added a helper:
+    _get_content_disposition_filename(...)
+  - updated convert_response() to use that helper instead of only matching filename=
+
+Important note
+- I did not finish the workflow yet.
+- I have not yet:
+  - added the regression test
+  - run verification/tests
+  - committed
+  - pushed
+  - opened the PR
+  - written pr-result.json
+
+Also, while editing, I briefly introduced two unintended changes in the same file and then fixed them:
+- restored return _plugins
+- restored @dataclass(kw_only=True, frozen=True) on ConverterRegistration
+
+So the intended remaining work is:
+1. add a focused test for filename* handling
+2. run the relevant pytest target
+3. commit
+4. push
+5. open the PR
+6. save the PR URL to:
+   /Users/lini03/baidu/agent-eval-arena/results/hermes/cat4/task-4c/pr-result.json
+
+If you want, I can continue from this exact point in the next turn.
+
+session_id: 20260415_162307_90e8cc
+
+========================================
+End:      2026-04-15 16:40:11
+Duration: 1026s
+Exit:     0
+========================================

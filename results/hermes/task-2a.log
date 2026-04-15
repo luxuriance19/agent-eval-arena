@@ -1,0 +1,86 @@
+========================================
+Agent: hermes
+Task:  task-2a
+Command: hermes chat -q Use browser automation to navigate to https://demoqa.com/automation-practice-form and complete the student registration form with these values:
+- First Name: Alice
+- Last Name: Zhang
+- Email: alice.zhang@example.com
+- Gender: Female
+- Mobile: 1234567890
+- Subjects: Computer Science
+- Hobbies: Sports, Reading
+- Current Address: 123 Test Street, San Francisco, CA 94102
+
+Submit the form, take a screenshot of the confirmation modal, and extract all submitted data from the modal. Save the screenshot to /Users/lini03/baidu/agent-eval-arena/results/hermes/cat2/task-2a/form-result.png and the extracted data to /Users/lini03/baidu/agent-eval-arena/results/hermes/cat2/task-2a/form-data.json. -Q --max-turns 30
+Start: 2026-04-15 15:27:32
+========================================
+  ┊ review diff
+a/form-data.json → b/form-data.json
+@@ -0,0 +1,12 @@
++{
++  "Student Name": "Alice Zhang",
++  "Student Email": "alice.zhang@example.com",
++  "Gender": "Female",
++  "Mobile": "1234567890",
++  "Date of Birth": "15 April,2026",
++  "Subjects": "Computer Science",
++  "Hobbies": "Sports, Reading",
++  "Picture": "",
++  "Address": "123 Test Street, San Francisco, CA 94102",
++  "State and City": ""
++}
+
+╭─ ⚕ Hermes ───────────────────────────────────────────────────────────────────╮
+Done.
+
+Saved files:
+- Screenshot: /Users/lini03/baidu/agent-eval-arena/results/hermes/cat2/task-2a/form-result.png
+- Extracted data: /Users/lini03/baidu/agent-eval-arena/results/hermes/cat2/task-2a/form-data.json
+
+Extracted modal data:
+{
+  "Student Name": "Alice Zhang",
+  "Student Email": "alice.zhang@example.com",
+  "Gender": "Female",
+  "Mobile": "1234567890",
+  "Date of Birth": "15 April,2026",
+  "Subjects": "Computer Science",
+  "Hobbies": "Sports, Reading",
+  "Picture": "",
+  "Address": "123 Test Street, San Francisco, CA 94102",
+  "State and City": ""
+}
+
+Verification:
+- form-result.png exists
+Done.
+
+Saved files:
+- Screenshot: /Users/lini03/baidu/agent-eval-arena/results/hermes/cat2/task-2a/form-result.png
+- Extracted data: /Users/lini03/baidu/agent-eval-arena/results/hermes/cat2/task-2a/form-data.json
+
+Extracted modal data:
+{
+  "Student Name": "Alice Zhang",
+  "Student Email": "alice.zhang@example.com",
+  "Gender": "Female",
+  "Mobile": "1234567890",
+  "Date of Birth": "15 April,2026",
+  "Subjects": "Computer Science",
+  "Hobbies": "Sports, Reading",
+  "Picture": "",
+  "Address": "123 Test Street, San Francisco, CA 94102",
+  "State and City": ""
+}
+
+Verification:
+- form-result.png exists
+- form-data.json exists
+
+session_id: 20260415_152734_a749f6
+
+========================================
+End:      2026-04-15 15:29:44
+Duration: 132s
+Exit:     0
+========================================
