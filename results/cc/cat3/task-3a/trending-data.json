@@ -1,0 +1,366 @@
+{
+  "generated_at": "2026-04-15",
+  "source": "https://github.com/trending",
+  "timeframes": {
+    "daily": [
+      {
+        "rank": 1,
+        "name": "andrej-karpathy-skills",
+        "owner": "forrestchang",
+        "full_name": "forrestchang/andrej-karpathy-skills",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+        "language": null,
+        "total_stars": 37192,
+        "period_stars": 9263,
+        "forks": 3037
+      },
+      {
+        "rank": 2,
+        "name": "claude-mem",
+        "owner": "thedotmack",
+        "full_name": "thedotmack/claude-mem",
+        "description": "A Claude Code plugin that automatically captures session activity, compresses it with AI, and injects relevant context into future sessions.",
+        "language": "TypeScript",
+        "total_stars": 56513,
+        "period_stars": 2997,
+        "forks": 4556
+      },
+      {
+        "rank": 3,
+        "name": "voicebox",
+        "owner": "jamiepine",
+        "full_name": "jamiepine/voicebox",
+        "description": "The open-source voice synthesis studio",
+        "language": "TypeScript",
+        "total_stars": 17705,
+        "period_stars": 1162,
+        "forks": 2061
+      },
+      {
+        "rank": 4,
+        "name": "editor",
+        "owner": "pascalorg",
+        "full_name": "pascalorg/editor",
+        "description": "Create and share 3D architectural projects.",
+        "language": "TypeScript",
+        "total_stars": 12012,
+        "period_stars": 820,
+        "forks": 1501
+      },
+      {
+        "rank": 5,
+        "name": "markitdown",
+        "owner": "microsoft",
+        "full_name": "microsoft/markitdown",
+        "description": "Python tool for converting files and office documents to Markdown.",
+        "language": "Python",
+        "total_stars": 108937,
+        "period_stars": 1675,
+        "forks": 6917
+      },
+      {
+        "rank": 6,
+        "name": "superpowers",
+        "owner": "obra",
+        "full_name": "obra/superpowers",
+        "description": "An agentic skills framework & software development methodology that works.",
+        "language": "Shell",
+        "total_stars": 153040,
+        "period_stars": 1919,
+        "forks": 13281
+      },
+      {
+        "rank": 7,
+        "name": "Apollo-11",
+        "owner": "chrislgarry",
+        "full_name": "chrislgarry/Apollo-11",
+        "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+        "language": "Assembly",
+        "total_stars": 66537,
+        "period_stars": 472,
+        "forks": 7590
+      },
+      {
+        "rank": 8,
+        "name": "ai-hedge-fund",
+        "owner": "virattt",
+        "full_name": "virattt/ai-hedge-fund",
+        "description": "An AI Hedge Fund Team",
+        "language": "Python",
+        "total_stars": 54504,
+        "period_stars": 1007,
+        "forks": 9454
+      },
+      {
+        "rank": 9,
+        "name": "Kronos",
+        "owner": "shiyu-coder",
+        "full_name": "shiyu-coder/Kronos",
+        "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+        "language": "Python",
+        "total_stars": 17979,
+        "period_stars": 963,
+        "forks": 3332
+      },
+      {
+        "rank": 10,
+        "name": "hermes-agent",
+        "owner": "NousResearch",
+        "full_name": "NousResearch/hermes-agent",
+        "description": "The agent that grows with you",
+        "language": "Python",
+        "total_stars": 86758,
+        "period_stars": 8301,
+        "forks": 11747
+      }
+    ],
+    "weekly": [
+      {
+        "rank": 1,
+        "name": "andrej-karpathy-skills",
+        "owner": "forrestchang",
+        "full_name": "forrestchang/andrej-karpathy-skills",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+        "language": null,
+        "total_stars": 37192,
+        "period_stars": 21795,
+        "forks": 3037
+      },
+      {
+        "rank": 2,
+        "name": "hermes-agent",
+        "owner": "NousResearch",
+        "full_name": "NousResearch/hermes-agent",
+        "description": "The agent that grows with you",
+        "language": "Python",
+        "total_stars": 86759,
+        "period_stars": 52996,
+        "forks": 11747
+      },
+      {
+        "rank": 3,
+        "name": "multica",
+        "owner": "multica-ai",
+        "full_name": "multica-ai/multica",
+        "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
+        "language": "TypeScript",
+        "total_stars": 12869,
+        "period_stars": 9823,
+        "forks": 1578
+      },
+      {
+        "rank": 4,
+        "name": "Archon",
+        "owner": "coleam00",
+        "full_name": "coleam00/Archon",
+        "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
+        "language": "TypeScript",
+        "total_stars": 18043,
+        "period_stars": 4024,
+        "forks": 2832
+      },
+      {
+        "rank": 5,
+        "name": "DeepTutor",
+        "owner": "HKUDS",
+        "full_name": "HKUDS/DeepTutor",
+        "description": "DeepTutor: Agent-Native Personalized Learning Assistant",
+        "language": "Python",
+        "total_stars": 18244,
+        "period_stars": 6401,
+        "forks": 2401
+      },
+      {
+        "rank": 6,
+        "name": "markitdown",
+        "owner": "microsoft",
+        "full_name": "microsoft/markitdown",
+        "description": "Python tool for converting files and office documents to Markdown.",
+        "language": "Python",
+        "total_stars": 108937,
+        "period_stars": 14615,
+        "forks": 6917
+      },
+      {
+        "rank": 7,
+        "name": "gallery",
+        "owner": "google-ai-edge",
+        "full_name": "google-ai-edge/gallery",
+        "description": "A gallery that showcases on-device ML/GenAI use cases and allows people to try and use models locally.",
+        "language": "Kotlin",
+        "total_stars": 21100,
+        "period_stars": 2671,
+        "forks": 2001
+      },
+      {
+        "rank": 8,
+        "name": "claude-mem",
+        "owner": "thedotmack",
+        "full_name": "thedotmack/claude-mem",
+        "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI.",
+        "language": "TypeScript",
+        "total_stars": 56513,
+        "period_stars": 8742,
+        "forks": 4556
+      },
+      {
+        "rank": 9,
+        "name": "ChinaTextbook",
+        "owner": "TapXWorld",
+        "full_name": "TapXWorld/ChinaTextbook",
+        "description": "所有小初高、大学PDF教材。",
+        "language": "Roff",
+        "total_stars": 69420,
+        "period_stars": 2561,
+        "forks": 15498
+      },
+      {
+        "rank": 10,
+        "name": "seomachine",
+        "owner": "TheCraigHewitt",
+        "full_name": "TheCraigHewitt/seomachine",
+        "description": "A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business.",
+        "language": "Python",
+        "total_stars": 6248,
+        "period_stars": 2562,
+        "forks": 860
+      }
+    ],
+    "monthly": [
+      {
+        "rank": 1,
+        "name": "hermes-agent",
+        "owner": "NousResearch",
+        "full_name": "NousResearch/hermes-agent",
+        "description": "The agent that grows with you",
+        "language": "Python",
+        "total_stars": 86759,
+        "period_stars": 76339,
+        "forks": 11747
+      },
+      {
+        "rank": 2,
+        "name": "everything-claude-code",
+        "owner": "affaan-m",
+        "full_name": "affaan-m/everything-claude-code",
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development",
+        "language": "JavaScript",
+        "total_stars": 156593,
+        "period_stars": 81407,
+        "forks": 24308
+      },
+      {
+        "rank": 3,
+        "name": "superpowers",
+        "owner": "obra",
+        "full_name": "obra/superpowers",
+        "description": "An agentic skills framework & software development methodology that works.",
+        "language": "Shell",
+        "total_stars": 153040,
+        "period_stars": 70149,
+        "forks": 13281
+      },
+      {
+        "rank": 4,
+        "name": "markitdown",
+        "owner": "microsoft",
+        "full_name": "microsoft/markitdown",
+        "description": "Python tool for converting files and office documents to Markdown.",
+        "language": "Python",
+        "total_stars": 108937,
+        "period_stars": 17711,
+        "forks": 6917
+      },
+      {
+        "rank": 5,
+        "name": "deer-flow",
+        "owner": "bytedance",
+        "full_name": "bytedance/deer-flow",
+        "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates.",
+        "language": "Python",
+        "total_stars": 61645,
+        "period_stars": 31482,
+        "forks": 7933
+      },
+      {
+        "rank": 6,
+        "name": "learn-claude-code",
+        "owner": "shareAI-lab",
+        "full_name": "shareAI-lab/learn-claude-code",
+        "description": "Bash is all you need - A nano claude code–like agent harness, built from 0 to 1",
+        "language": "TypeScript",
+        "total_stars": 53558,
+        "period_stars": 27017,
+        "forks": 8791
+      },
+      {
+        "rank": 7,
+        "name": "TradingAgents",
+        "owner": "TauricResearch",
+        "full_name": "TauricResearch/TradingAgents",
+        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+        "language": "Python",
+        "total_stars": 50559,
+        "period_stars": 18642,
+        "forks": 9129
+      },
+      {
+        "rank": 8,
+        "name": "andrej-karpathy-skills",
+        "owner": "forrestchang",
+        "full_name": "forrestchang/andrej-karpathy-skills",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+        "language": null,
+        "total_stars": 37192,
+        "period_stars": 23210,
+        "forks": 3037
+      },
+      {
+        "rank": 9,
+        "name": "VibeVoice",
+        "owner": "microsoft",
+        "full_name": "microsoft/VibeVoice",
+        "description": "Open-Source Frontier Voice AI",
+        "language": "Python",
+        "total_stars": 39602,
+        "period_stars": 16017,
+        "forks": 4603
+      },
+      {
+        "rank": 10,
+        "name": "MoneyPrinterV2",
+        "owner": "FujiwaraChoki",
+        "full_name": "FujiwaraChoki/MoneyPrinterV2",
+        "description": "Automate the process of making money online.",
+        "language": "Python",
+        "total_stars": 29606,
+        "period_stars": 14719,
+        "forks": 3174
+      }
+    ]
+  },
+  "cross_reference": {
+    "all_three_timeframes": [
+      "forrestchang/andrej-karpathy-skills",
+      "NousResearch/hermes-agent",
+      "microsoft/markitdown"
+    ],
+    "daily_and_weekly": [
+      "thedotmack/claude-mem"
+    ],
+    "daily_and_monthly": [
+      "obra/superpowers"
+    ],
+    "weekly_and_monthly": []
+  },
+  "language_breakdown": {
+    "Python": 13,
+    "TypeScript": 7,
+    "Shell": 2,
+    "JavaScript": 1,
+    "Assembly": 1,
+    "Kotlin": 1,
+    "Roff": 1,
+    "Unspecified": 3
+  }
+}

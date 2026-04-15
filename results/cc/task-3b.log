@@ -1,0 +1,33 @@
+========================================
+Agent: cc
+Task:  task-3b
+Command: claude --print --permission-mode bypassPermissions --output-format text -p Scrape the tech blog at https://blog.pragmaticengineer.com/ (fallback: https://martinfowler.com/):
+
+1. Extract the 10 most recent article titles, dates, and preview text
+2. For the 3 most recent articles, navigate to each and extract:
+   - Full title
+   - Publication date
+   - Estimated reading time (word count / 250)
+   - Key topics or tags
+   - First 500 characters of body text
+3. Output structured JSON to ./blog-data.json
+4. Generate a human-readable Markdown summary to ./blog-summary.md
+5. Identify common themes across the articles and include in the summary
+Start: 2026-04-15 16:09:03
+========================================
+全部完成。已生成两个文件：
+
+- **`./blog-data.json`** — 结构化 JSON，包含 10 篇最新文章的元数据，以及前 3 篇的详细信息（标题、日期、字数、预估阅读时间、关键标签、正文前 500 字符）
+- **`./blog-summary.md`** — 人类可读的 Markdown 摘要，含文章列表表格、前 3 篇的深度信息，以及 5 个跨文章共同主题分析
+
+主要发现：
+- 博客近期聚焦于 **AI 对软件开发全链条的冲击**（GitHub 可靠性下降、AI 一周重写 Next.js、LLM 替代 SaaS）
+- **基础设施在 AI 时代面临新压力**（GitHub 可用性降至 ~90%）
+- **开源商业模式的护城河正在被 AI 侵蚀**
+- **工程师角色和职业路径在快速演变**（FDE 岗位供需错配）
+
+========================================
+End:      2026-04-15 16:13:21
+Duration: 258s
+Exit:     0
+========================================

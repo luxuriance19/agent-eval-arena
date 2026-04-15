@@ -1,0 +1,68 @@
+{
+  "task-1": {
+    "duration_seconds": 268,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T07:22:23Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/cc/task-1.log"
+  },
+  "task-2a": {
+    "duration_seconds": 179,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T07:30:31Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/cc/task-2a.log"
+  },
+  "task-2b": {
+    "duration_seconds": 87,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T07:35:23Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/cc/task-2b.log"
+  },
+  "task-2c": {
+    "duration_seconds": 1183,
+    "exit_code": 1,
+    "timestamp": "2026-04-15T07:58:20Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/cc/task-2c.log"
+  },
+  "task-2d": {
+    "duration_seconds": 1285,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T08:00:02Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/cc/task-2d.log"
+  },
+  "task-2c-retry": {
+    "duration_seconds": 366,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T08:07:16Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/cc/task-2c-retry.log"
+  },
+  "task-3b": {
+    "duration_seconds": 258,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T08:13:21Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/cc/task-3b.log"
+  },
+  "task-3a": {
+    "duration_seconds": 331,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T08:14:34Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/cc/task-3a.log"
+  },
+  "task-3c": {
+    "duration_seconds": 365,
+    "exit_code": 1,
+    "timestamp": "2026-04-15T08:15:08Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/cc/task-3c.log"
+  },
+  "task-4a": {
+    "duration_seconds": 99,
+    "exit_code": 0,
+    "timestamp": "2026-04-15T08:24:44Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/cc/task-4a.log"
+  },
+  "task-4c": {
+    "duration_seconds": 2068,
+    "exit_code": 1,
+    "timestamp": "2026-04-15T08:57:33Z",
+    "log_file": "/Users/lini03/baidu/agent-eval-arena/results/cc/task-4c.log"
+  }
+}

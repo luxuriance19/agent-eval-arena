@@ -1,0 +1,115 @@
+{
+  "source": "https://blog.pragmaticengineer.com/",
+  "scraped_at": "2026-04-15",
+  "recent_articles": [
+    {
+      "title": "The Pulse: is GitHub still best for AI-native development?",
+      "date": "2026-04-03",
+      "preview": "Availability has dropped to one nine (~90% – !!), partly due to not being able to handle increased traffic from AI coding agents.",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-is-github-still-best-for-ai-native-development/",
+      "detail": {
+        "full_title": "The Pulse: is GitHub still best for AI-native development?",
+        "publication_date": "2026-04-03",
+        "word_count": 1272,
+        "estimated_reading_time_minutes": 5.1,
+        "key_topics": [
+          "GitHub reliability and outages",
+          "AI agents and infrastructure load",
+          "Pierre Computer (Code.storage) startup",
+          "GitHub Copilot and Microsoft internal politics",
+          "AI-native development platforms"
+        ],
+        "first_500_chars": "We're used to highly reliable systems which target four-nines of availability (99.99%, meaning about 52 minutes of downtime per year), and for it to be embarrassing to barely hit three nines (around 9 hours of downtime per year.) And yet, in the past month, GitHub's reliability is down to one nine! Here's data from the third-party, \"missing GitHub status page\", which was built after GitHub stopped updating its own status page due to terrible availability. Recently, things have looked poor: This means that for every 30 days, GitHub had issues on 3 days"
+      }
+    },
+    {
+      "title": "Is the FDE role becoming less desirable?",
+      "date": "2026-03-27",
+      "preview": "Job postings for Forward Deployed Engineers (FDEs) have surged, but many professionals don't want the role because it's more like solutions engineering",
+      "url": "https://blog.pragmaticengineer.com/is-the-fde-role-becoming-less-desirable/",
+      "detail": {
+        "full_title": "Is the FDE role becoming less desirable?",
+        "publication_date": "2026-03-27",
+        "word_count": 521,
+        "estimated_reading_time_minutes": 2.1,
+        "key_topics": [
+          "Forward Deployed Engineer (FDE) role",
+          "Software engineering career trends",
+          "Tech hiring market",
+          "Sales engineering vs software engineering",
+          "Job market dynamics"
+        ],
+        "first_500_characters": "An interesting trend highlighted by The Wall Street Journal: companies want to hire for FDE roles, but devs are just not that interested: \"Job postings on Indeed grew more than 10-fold in 2025 compared with 2024. The number of public company transcripts mentioning the role jumped to 50 from eight over the same period, according to data from AlphaSense. The only problem? Few engineers want the job, which has historically been seen as demanding, undesirable, and less prestigious than product-focused engineering"
+      }
+    },
+    {
+      "title": "The Pulse: Cloudflare rewrites Next.js as AI rewrites commercial open source",
+      "date": "2026-03-05",
+      "preview": "An engineer at Cloudflare rewrote most of Vercel's Next.js in one week with AI agents. It looks like a sign of how AI will disrupt existing moats",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-cloudflare-rewrites-next-js-as-ai-rewrites-commercial-open-source/",
+      "detail": {
+        "full_title": "The Pulse: Cloudflare rewrites Next.js as AI rewrites commercial open source",
+        "publication_date": "2026-03-05",
+        "word_count": 3427,
+        "estimated_reading_time_minutes": 13.7,
+        "key_topics": [
+          "AI-powered code rewriting",
+          "Commercial open source business models",
+          "Cloudflare vs Vercel competition",
+          "Next.js and vinext",
+          "Open source moats in the AI era"
+        ],
+        "first_500_chars": "Hi, this is Gergely with a bonus, free issue of the Pragmatic Engineer. This issue is the entire The Pulse issue from the past week, which paying subscribers received seven days ago. This piece generated quite a few comments across subscribers, and so I'm sharing it more broadly, especially as it raises questions on what is defensible and what is not with open source. If you've been forwarded this email, you can subscribe here to get issues like this in your inbox. Today's issue of The Pulse focuses on a single event because it's a significant one with major potential ripple effects."
+      }
+    },
+    {
+      "title": "I replaced a $120/year micro-SaaS in 20 minutes with LLM-generated code",
+      "date": "2026-01-29",
+      "preview": "I used to pay $120/year for a SaaS that hasn't added new features in four years...Using an LLM, I managed to rewrite all the functionality I used",
+      "url": "https://blog.pragmaticengineer.com/i-replaced-a-120-year-micro-saas-in-20-minutes-with-llm-generated-code/",
+      "detail": null
+    },
+    {
+      "title": "The grief when AI writes most of the code",
+      "date": null,
+      "preview": null,
+      "url": "https://blog.pragmaticengineer.com/the-grief-when-ai-writes-most-of-the-code/",
+      "detail": null
+    },
+    {
+      "title": "The Pulse: Cloudflare's latest outage proves dangers of global configuration changes (again)",
+      "date": null,
+      "preview": null,
+      "url": "https://blog.pragmaticengineer.com/the-pulse-cloudflares-latest-outage/",
+      "detail": null
+    },
+    {
+      "title": "The Pulse: Could a 5-day RTO be around the corner for Big Tech?",
+      "date": null,
+      "preview": null,
+      "url": "https://blog.pragmaticengineer.com/the-pulse-could-a-5-day-rto-be-around-the-corner-for-big-tech/",
+      "detail": null
+    },
+    {
+      "title": "Downdetector and the real cost of no upstream dependencies",
+      "date": null,
+      "preview": null,
+      "url": "https://blog.pragmaticengineer.com/downdetector-and-the-real-cost-of-no-upstream-dependencies/",
+      "detail": null
+    },
+    {
+      "title": "A startup in Mongolia translated my book",
+      "date": null,
+      "preview": null,
+      "url": "https://blog.pragmaticengineer.com/traveling-to-mongolia/",
+      "detail": null
+    },
+    {
+      "title": "The Pulse: Cloudflare takes down half the internet – but shares a great postmortem",
+      "date": null,
+      "preview": null,
+      "url": "https://blog.pragmaticengineer.com/the-pulse-cloudflare-takes-down-half-the-internet/",
+      "detail": null
+    }
+  ]
+}

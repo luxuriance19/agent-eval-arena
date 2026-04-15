@@ -1,0 +1,7 @@
+{
+  "repo": "forrestchang/andrej-karpathy-skills",
+  "readme_first_paragraph": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+  "total_stars": "37.1k",
+  "total_forks": "3k",
+  "latest_commit_message": "Fix plugin.json schema validation errors"
+}

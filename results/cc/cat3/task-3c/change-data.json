@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://httpbin.org/uuid",
+    "records": [
+      {
+        "fetch_index": 1,
+        "timestamp": "2026-04-15T08:10:12.988293+00:00",
+        "value": "a5fae7f7-bfaf-42f6-a64f-3af56a2bca79",
+        "raw": {
+          "uuid": "a5fae7f7-bfaf-42f6-a64f-3af56a2bca79"
+        }
+      },
+      {
+        "fetch_index": 2,
+        "timestamp": "2026-04-15T08:10:25.771852+00:00",
+        "value": "d6c24d42-1e83-48e2-9851-52f6621df791",
+        "raw": {
+          "uuid": "d6c24d42-1e83-48e2-9851-52f6621df791"
+        }
+      },
+      {
+        "fetch_index": 3,
+        "timestamp": "2026-04-15T08:10:32.137566+00:00",
+        "value": "dac59960-4ab8-4fcb-ae6d-75bb1796e77e",
+        "raw": {
+          "uuid": "dac59960-4ab8-4fcb-ae6d-75bb1796e77e"
+        }
+      }
+    ],
+    "diffs": [
+      {
+        "from_fetch": 1,
+        "to_fetch": 2,
+        "from_ts": "2026-04-15T08:10:12.988293+00:00",
+        "to_ts": "2026-04-15T08:10:25.771852+00:00",
+        "changed": true,
+        "old_value": "a5fae7f7-bfaf-42f6-a64f-3af56a2bca79",
+        "new_value": "d6c24d42-1e83-48e2-9851-52f6621df791"
+      },
+      {
+        "from_fetch": 2,
+        "to_fetch": 3,
+        "from_ts": "2026-04-15T08:10:25.771852+00:00",
+        "to_ts": "2026-04-15T08:10:32.137566+00:00",
+        "changed": true,
+        "old_value": "d6c24d42-1e83-48e2-9851-52f6621df791",
+        "new_value": "dac59960-4ab8-4fcb-ae6d-75bb1796e77e"
+      }
+    ]
+  },
+  {
+    "url": "https://worldtimeapi.org/api/timezone/America/New_York",
+    "records": [],
+    "diffs": [],
+    "error": "[Errno 54] Connection reset by peer"
+  }
+]
