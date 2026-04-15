@@ -1,0 +1,126 @@
+{
+  "B1": {
+    "violations": {
+      "Optional[": {
+        "pattern": "Optional\\[",
+        "expected": "X | None (PEP 604)",
+        "count": 0
+      },
+      "os.path": {
+        "pattern": "os\\.path\\.",
+        "expected": "pathlib.Path",
+        "count": 0
+      },
+      "asyncio.gather": {
+        "pattern": "asyncio\\.gather",
+        "expected": "asyncio.TaskGroup",
+        "count": 0
+      },
+      "Dict[": {
+        "pattern": "\\bDict\\[",
+        "expected": "dict[...] (PEP 585)",
+        "count": 0
+      },
+      "List[": {
+        "pattern": "\\bList\\[",
+        "expected": "list[...] (PEP 585)",
+        "count": 0
+      }
+    },
+    "total_violations": 0,
+    "compliant": true
+  },
+  "B2": {
+    "violations": {
+      "Optional[": {
+        "pattern": "Optional\\[",
+        "expected": "X | None (PEP 604)",
+        "count": 0
+      },
+      "os.path": {
+        "pattern": "os\\.path\\.",
+        "expected": "pathlib.Path",
+        "count": 0
+      },
+      "asyncio.gather": {
+        "pattern": "asyncio\\.gather",
+        "expected": "asyncio.TaskGroup",
+        "count": 0
+      },
+      "Dict[": {
+        "pattern": "\\bDict\\[",
+        "expected": "dict[...] (PEP 585)",
+        "count": 0
+      },
+      "List[": {
+        "pattern": "\\bList\\[",
+        "expected": "list[...] (PEP 585)",
+        "count": 0
+      }
+    },
+    "total_violations": 0,
+    "compliant": true
+  },
+  "B3": {
+    "violations": {
+      "Optional[": {
+        "pattern": "Optional\\[",
+        "expected": "X | None (PEP 604)",
+        "count": 0
+      },
+      "os.path": {
+        "pattern": "os\\.path\\.",
+        "expected": "pathlib.Path",
+        "count": 0
+      },
+      "asyncio.gather": {
+        "pattern": "asyncio\\.gather",
+        "expected": "asyncio.TaskGroup",
+        "count": 0
+      },
+      "Dict[": {
+        "pattern": "\\bDict\\[",
+        "expected": "dict[...] (PEP 585)",
+        "count": 0
+      },
+      "List[": {
+        "pattern": "\\bList\\[",
+        "expected": "list[...] (PEP 585)",
+        "count": 0
+      }
+    },
+    "total_violations": 0,
+    "compliant": true
+  },
+  "B4": {
+    "violations": {
+      "Optional[": {
+        "pattern": "Optional\\[",
+        "expected": "X | None (PEP 604)",
+        "count": 0
+      },
+      "os.path": {
+        "pattern": "os\\.path\\.",
+        "expected": "pathlib.Path",
+        "count": 0
+      },
+      "asyncio.gather": {
+        "pattern": "asyncio\\.gather",
+        "expected": "asyncio.TaskGroup",
+        "count": 0
+      },
+      "Dict[": {
+        "pattern": "\\bDict\\[",
+        "expected": "dict[...] (PEP 585)",
+        "count": 0
+      },
+      "List[": {
+        "pattern": "\\bList\\[",
+        "expected": "list[...] (PEP 585)",
+        "count": 0
+      }
+    },
+    "total_violations": 0,
+    "compliant": true
+  }
+}

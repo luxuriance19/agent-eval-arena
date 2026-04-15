@@ -1,0 +1,103 @@
+[
+  {
+    "turn": 1,
+    "prompt": "回忆一下之前我们做的 config_reader.py 用了什么方法和模式？",
+    "response": null,
+    "tool_calls": [
+      {
+        "id": "toolu_bdrk_01Y5kGK3U2ont5BVL8cmh1mV",
+        "name": "session_search",
+        "arguments": "{\"query\": \"config_reader.py\", \"limit\": 3}"
+      },
+      {
+        "id": "toolu_bdrk_017tME41gyTTNJU9ooGahHxa",
+        "name": "search_files",
+        "arguments": "{\"pattern\": \"config_reader.py\", \"target\": \"files\"}"
+      },
+      {
+        "id": "toolu_bdrk_015bmbSqQddpN7XHZwumVsPm",
+        "name": "terminal",
+        "arguments": "{\"command\": \"pwd\"}"
+      }
+    ],
+    "tool_call_count": 3,
+    "api_calls": 4,
+    "duration_seconds": 12.63,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "completed": false,
+    "memory_tool_used": false,
+    "skill_manage_used": false,
+    "session_search_used": true
+  },
+  {
+    "turn": 2,
+    "prompt": "搜索之前会话中的 exponential backoff 实现方式，告诉我具体的实现细节。",
+    "response": null,
+    "tool_calls": [],
+    "tool_call_count": 0,
+    "api_calls": 1,
+    "duration_seconds": 1.34,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "completed": false,
+    "memory_tool_used": false,
+    "skill_manage_used": false,
+    "session_search_used": false
+  },
+  {
+    "turn": 3,
+    "prompt": "结合过去会话中的代码，在 /tmp/hermes-evolution-eval 写一个 resilient_config.py，能从远程 URL 加载 JSON 配置，带重试机制，用之前的 retry 模式和 pathlib 文件缓存。",
+    "response": null,
+    "tool_calls": [],
+    "tool_call_count": 0,
+    "api_calls": 1,
+    "duration_seconds": 1.9,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "completed": false,
+    "memory_tool_used": false,
+    "skill_manage_used": false,
+    "session_search_used": false
+  },
+  {
+    "turn": 4,
+    "prompt": "你记得我的编码偏好吗？列出所有你知道的关于我的编码习惯和偏好。",
+    "response": null,
+    "tool_calls": [],
+    "tool_call_count": 0,
+    "api_calls": 1,
+    "duration_seconds": 0.86,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "completed": false,
+    "memory_tool_used": false,
+    "skill_manage_used": false,
+    "session_search_used": false
+  },
+  {
+    "turn": 5,
+    "prompt": "在 /tmp/hermes-evolution-eval 创建一个 Python 项目模板目录 project-template/，融入我们所有会话中确立的偏好和模式：\n- pyproject.toml 配置\n- src/ 目录结构\n- tests/ 目录结构\n- Dockerfile + Makefile\n- 类型注解规范示例文件",
+    "response": null,
+    "tool_calls": [],
+    "tool_call_count": 0,
+    "api_calls": 1,
+    "duration_seconds": 1.71,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "completed": false,
+    "memory_tool_used": false,
+    "skill_manage_used": false,
+    "session_search_used": false
+  }
+]

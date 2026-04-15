@@ -47,8 +47,10 @@ SKILLS_DIR = HERMES_HOME / "skills"
 
 WORK_DIR = Path("/tmp/hermes-evolution-eval")
 
-# 默认模型（与 cli-config.yaml 一致）
-DEFAULT_MODEL = "custom/claude-sonnet-4-5-20250929"
+# 默认模型和 API 配置（与 cli-config.yaml 一致）
+DEFAULT_MODEL = "claude-sonnet-4-5-20250929"
+DEFAULT_BASE_URL = "http://api.dbh.baidu-int.com/v1"
+DEFAULT_API_KEY = "sk-wZFlcMYI5UZg2iDYR3uvIY350NhVnpg4id3WNx6rFwpMWiEc"
 
 # 后台 review 线程等待时间（秒）
 BACKGROUND_REVIEW_WAIT = 10
@@ -174,6 +176,8 @@ def create_agent(session_id: str | None = None) -> AIAgent:
     """创建标准配置的 AIAgent 实例（memory + skills 由 config.yaml 控制）。"""
     return AIAgent(
         model=DEFAULT_MODEL,
+        base_url=DEFAULT_BASE_URL,
+        api_key=DEFAULT_API_KEY,
         session_id=session_id,
         quiet_mode=True,
         max_iterations=90,
