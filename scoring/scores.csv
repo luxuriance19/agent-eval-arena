@@ -1,34 +1,34 @@
 agent,task,correctness,completeness,quality,efficiency,autonomy,notes
-cc,task-1,0,0,0,0,0,
-cc,task-2a,0,0,0,0,0,
-cc,task-2b,0,0,0,0,0,
-cc,task-2c,0,0,0,0,0,
-cc,task-2d,0,0,0,0,0,
-cc,task-3a,0,0,0,0,0,
-cc,task-3b,0,0,0,0,0,
-cc,task-3c,0,0,0,0,0,
-cc,task-4a,0,0,0,0,0,
-cc,task-4b,0,0,0,0,0,
-cc,task-4c,0,0,0,0,0,
-openclaw,task-1,0,0,0,0,0,
-openclaw,task-2a,0,0,0,0,0,
-openclaw,task-2b,0,0,0,0,0,
-openclaw,task-2c,0,0,0,0,0,
-openclaw,task-2d,0,0,0,0,0,
-openclaw,task-3a,0,0,0,0,0,
-openclaw,task-3b,0,0,0,0,0,
-openclaw,task-3c,0,0,0,0,0,
-openclaw,task-4a,0,0,0,0,0,
-openclaw,task-4b,0,0,0,0,0,
-openclaw,task-4c,0,0,0,0,0,
-hermes,task-1,0,0,0,0,0,
-hermes,task-2a,0,0,0,0,0,
-hermes,task-2b,0,0,0,0,0,
-hermes,task-2c,0,0,0,0,0,
-hermes,task-2d,0,0,0,0,0,
-hermes,task-3a,0,0,0,0,0,
-hermes,task-3b,0,0,0,0,0,
-hermes,task-3c,0,0,0,0,0,
-hermes,task-4a,0,0,0,0,0,
-hermes,task-4b,0,0,0,0,0,
-hermes,task-4c,0,0,0,0,0,
+cc,task-1,8,8,8,7,7,20/20测试 268s 无README 优秀类型注解 首次429重试
+cc,task-2a,9,9,9,8,9,179s 所有字段正确 截图清晰 JSON完整
+cc,task-2b,9,10,9,9,9,15条完整 字段齐全 JSON有效 正确识别最高分 有截图
+cc,task-2c,8,9,8,5,7,重试后7步全完成 366s 3截图 数据完整 首次429失败
+cc,task-2d,8,9,9,5,7,6步完成 1285s(Cloudflare阻止转WebArchive) 摘要高质量
+cc,task-3a,9,10,9,8,9,三维度完整 交叉分析 语言分布 新星板块 中文报告
+cc,task-3b,9,9,9,8,9,10篇+3篇深入 JSON+MD完整 主题分析
+cc,task-3c,7,7,8,6,6,httpbin成功 worldtime失败 429但有部分输出
+cc,task-4a,9,9,9,8,9,99s Discussion#1创建成功 内容结构化500字 4维度清晰 社区号召力强
+cc,task-4b,0,0,0,0,0,跳过(无DEV_TO_API_KEY)
+cc,task-4c,3,2,3,2,2,fork了ai-hedge-fund 创建分支但无实际代码修改 未提PR
+openclaw,task-1,8,9,6,9,8,20/20测试 179s 有README 旧式typing HTML-XSS 自修1bug
+openclaw,task-2a,7,8,8,5,6,298s Subjects字段空 遇SSRF阻止需切换工具 重试多次
+openclaw,task-2b,9,10,8,6,7,15条完整 224s context-overflow自修 JSON有效 正确识别最高分
+openclaw,task-2c,8,9,8,7,7,7步全完成 3截图 数据完整 遇context-overflow自修
+openclaw,task-2d,8,9,9,6,7,6步完成 5文件齐全 摘要高质量 遇Cloudflare处理
+openclaw,task-3a,9,10,8,6,7,重试后完成 三维度完整 交叉分析 230s
+openclaw,task-3b,8,8,8,6,6,重试后完成 10篇+3篇深入 JSON+MD较小 主题分析基本
+openclaw,task-3c,8,8,8,7,8,httpbin+worldtime完成 报告完整
+openclaw,task-4a,0,0,0,0,0,执行失败 结果目录为空 无输出
+openclaw,task-4b,0,0,0,0,0,跳过(无DEV_TO_API_KEY)
+openclaw,task-4c,0,0,0,0,0,执行失败 结果目录为空 无输出
+hermes,task-1,8,8,8,6,9,14/14测试 343s 极简README 好类型注解 主动适配Py3.9
+hermes,task-2a,9,9,9,8,9,所有字段正确 截图最清晰 JSON完整
+hermes,task-2b,9,10,9,9,9,15条完整 字段齐全 全页截图 JSON有效 正确识别最高分
+hermes,task-2c,8,9,8,8,9,7步全完成 3截图(step1/2仅4KB) 数据完整 完全自主
+hermes,task-2d,9,10,9,8,9,6步全完成 截图清晰 JSON完整 摘要准确 额外保存raw.md
+hermes,task-3a,9,10,9,9,9,三维度完整 交叉分析 语言分布 新星板块 英文报告清晰
+hermes,task-3b,9,9,9,8,9,10篇+3篇深入 JSON+MD完整 主题分析
+hermes,task-3c,9,8,9,8,8,httpbin成功+unified-diff worldtime连接重置(已记录错误)
+hermes,task-4a,9,9,9,8,9,111s Discussion#2创建成功 内容结构化393字 4维度清晰 方法论深入
+hermes,task-4b,0,0,0,0,0,跳过(无DEV_TO_API_KEY)
+hermes,task-4c,2,1,2,1,2,clone了markitdown 但未创建分支/修改/提PR

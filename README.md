@@ -26,8 +26,14 @@ AI Coding Agent 三框架对比评估项目。
 ## 使用
 
 ```bash
-# 执行某个任务
-./scripts/eval-runner.sh cc task-1 claude --print "..."
+# Claude Code 执行任务
+./scripts/eval-runner.sh cc task-1 claude --print --permission-mode bypassPermissions "Build a bmk CLI tool..."
+
+# OpenClaw 执行任务 (从源码运行)
+./scripts/eval-runner.sh openclaw task-1 bash -c 'cd /Users/lini03/baidu/clawdbot && npx tsx src/entry.ts agent --local --agent waiter -m "Build a bmk CLI tool..." --timeout 300'
+
+# Hermes Agent 执行任务
+./scripts/eval-runner.sh hermes task-1 hermes chat -q "Build a bmk CLI tool..." -Q --max-turns 30
 
 # 验证代码项目
 ./scripts/verify-cat1.sh results/cc/cat1/
@@ -35,6 +41,14 @@ AI Coding Agent 三框架对比评估项目。
 # 计算总分
 python scripts/score-calculator.py
 ```
+
+## 正确的调用命令
+
+| Agent | 命令 |
+|-------|------|
+| CC | `claude --print --permission-mode bypassPermissions "<prompt>"` |
+| OpenClaw | `cd /Users/lini03/baidu/clawdbot && npx tsx src/entry.ts agent --local --agent waiter -m "<prompt>" --timeout 300` |
+| Hermes | `hermes chat -q "<prompt>" -Q --max-turns 30` |
 
 ## 目录结构
 
