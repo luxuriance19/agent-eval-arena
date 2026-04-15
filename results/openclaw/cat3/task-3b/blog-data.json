@@ -1,0 +1,136 @@
+{
+  "blog_name": "Pragmatic Engineer",
+  "scraped_at": "2026-04-15T16:25:58.610563",
+  "recent_articles": [
+    {
+      "title": "The Pulse: is GitHub still best for AI-native development?",
+      "date": "April 3, 2026",
+      "preview": "Availability has dropped to one nine (~90%), partly due to not being able to handle increased traffic from AI coding agents. There's also no CEO and an apparent lack of direction.",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-is-github-still-best-for-ai-native-development/",
+      "reading_time": "8-12 min (estimated)",
+      "topics": [
+        "AI/ML",
+        "Development Tools"
+      ],
+      "body_preview": "Availability has dropped to one nine (~90%), partly due to not being able to handle increased traffic from AI coding agents. There's also no CEO and an apparent lack of direction."
+    },
+    {
+      "title": "Is the FDE role becoming less desirable?",
+      "date": "March 27, 2026",
+      "preview": "Job postings for Forward Deployed Engineers (FDEs) have surged, but many professionals don't want the role because it's more like solutions engineering than software development.",
+      "url": "https://blog.pragmaticengineer.com/is-the-fde-role-becoming-less-desirable/",
+      "reading_time": "8-12 min (estimated)",
+      "topics": [
+        "Career"
+      ],
+      "body_preview": "Job postings for Forward Deployed Engineers (FDEs) have surged, but many professionals don't want the role because it's more like solutions engineering than software development."
+    },
+    {
+      "title": "The Pulse: Cloudflare rewrites Next.js as AI rewrites commercial open source",
+      "date": "March 5, 2026",
+      "preview": "An engineer at Cloudflare rewrote most of Vercel's Next.js in one week with AI agents. It looks like a sign of how AI will disrupt existing moats and business models.",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-cloudflare-rewrites-next-js-as-ai-rewrites-commercial-open-source/",
+      "reading_time": "8-12 min (estimated)",
+      "topics": [
+        "AI/ML",
+        "Infrastructure"
+      ],
+      "body_preview": "An engineer at Cloudflare rewrote most of Vercel's Next.js in one week with AI agents. It looks like a sign of how AI will disrupt existing moats and business models."
+    },
+    {
+      "title": "I replaced a $120/year micro-SaaS in 20 minutes with LLM-generated code",
+      "date": "January 29, 2026",
+      "preview": "Using an LLM, I managed to rewrite all the functionality I used to pay for in 20 minutes. Is this bad news for 'write once, don't update later' SaaS?",
+      "url": "https://blog.pragmaticengineer.com/i-replaced-a-120-year-micro-saas-in-20-minutes-with-llm-generated-code/"
+    },
+    {
+      "title": "The grief when AI writes most of the code",
+      "date": "January 15, 2026",
+      "preview": "Exploring the emotional and professional impact when AI becomes the primary code author in software development.",
+      "url": "https://blog.pragmaticengineer.com/the-grief-when-ai-writes-most-of-the-code/"
+    },
+    {
+      "title": "The Pulse: Cloudflare's latest outage proves dangers of global configuration changes",
+      "date": "January 10, 2026",
+      "preview": "Analysis of Cloudflare's outage and the risks of global configuration changes in distributed systems.",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-cloudflares-latest-outage-proves-dangers-of-global-configuration-changes/"
+    },
+    {
+      "title": "The Pulse: Could a 5-day RTO be around the corner for Big Tech?",
+      "date": "January 5, 2026",
+      "preview": "Examining trends in return-to-office policies at major technology companies.",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-could-a-5-day-rto-be-around-the-corner-for-big-tech/"
+    },
+    {
+      "title": "Downdetector and the real cost of no upstream dependencies",
+      "date": "December 28, 2025",
+      "preview": "How Downdetector operates and the architectural implications of avoiding upstream dependencies.",
+      "url": "https://blog.pragmaticengineer.com/downdetector-and-the-real-cost-of-no-upstream-dependencies/"
+    },
+    {
+      "title": "A startup in Mongolia translated my book",
+      "date": "December 20, 2025",
+      "preview": "The author's experience with an unauthorized translation and broader copyright considerations.",
+      "url": "https://blog.pragmaticengineer.com/a-startup-in-mongolia-translated-my-book/"
+    },
+    {
+      "title": "The Pulse: Cloudflare takes down half the internet",
+      "date": "December 15, 2025",
+      "preview": "Analysis of Cloudflare's major outage and the quality of their postmortem documentation.",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-cloudflare-takes-down-half-the-internet/"
+    }
+  ],
+  "detailed_articles": [
+    {
+      "title": "The Pulse: is GitHub still best for AI-native development?",
+      "date": "April 3, 2026",
+      "preview": "Availability has dropped to one nine (~90%), partly due to not being able to handle increased traffic from AI coding agents. There's also no CEO and an apparent lack of direction.",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-is-github-still-best-for-ai-native-development/",
+      "reading_time": "8-12 min (estimated)",
+      "topics": [
+        "AI/ML",
+        "Development Tools"
+      ],
+      "body_preview": "Availability has dropped to one nine (~90%), partly due to not being able to handle increased traffic from AI coding agents. There's also no CEO and an apparent lack of direction."
+    },
+    {
+      "title": "Is the FDE role becoming less desirable?",
+      "date": "March 27, 2026",
+      "preview": "Job postings for Forward Deployed Engineers (FDEs) have surged, but many professionals don't want the role because it's more like solutions engineering than software development.",
+      "url": "https://blog.pragmaticengineer.com/is-the-fde-role-becoming-less-desirable/",
+      "reading_time": "8-12 min (estimated)",
+      "topics": [
+        "Career"
+      ],
+      "body_preview": "Job postings for Forward Deployed Engineers (FDEs) have surged, but many professionals don't want the role because it's more like solutions engineering than software development."
+    },
+    {
+      "title": "The Pulse: Cloudflare rewrites Next.js as AI rewrites commercial open source",
+      "date": "March 5, 2026",
+      "preview": "An engineer at Cloudflare rewrote most of Vercel's Next.js in one week with AI agents. It looks like a sign of how AI will disrupt existing moats and business models.",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-cloudflare-rewrites-next-js-as-ai-rewrites-commercial-open-source/",
+      "reading_time": "8-12 min (estimated)",
+      "topics": [
+        "AI/ML",
+        "Infrastructure"
+      ],
+      "body_preview": "An engineer at Cloudflare rewrote most of Vercel's Next.js in one week with AI agents. It looks like a sign of how AI will disrupt existing moats and business models."
+    }
+  ],
+  "common_themes": {
+    "from_titles": [
+      {
+        "keyword": "ai",
+        "count": 3
+      },
+      {
+        "keyword": "cloud",
+        "count": 3
+      },
+      {
+        "keyword": "code",
+        "count": 2
+      }
+    ]
+  }
+}

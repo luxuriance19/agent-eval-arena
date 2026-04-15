@@ -1,0 +1,498 @@
+{
+  "generated_at": "2026-04-15T16:19:42.981565",
+  "timeframes": {
+    "today": [
+      {
+        "owner": "forrestchang",
+        "name": "andrej-karpathy-skills",
+        "full_name": "forrestchang/andrej-karpathy-skills",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+        "language": "Unknown",
+        "period_stars": "9263",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "thedotmack",
+        "name": "claude-mem",
+        "full_name": "thedotmack/claude-mem",
+        "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions.",
+        "language": "TypeScript",
+        "period_stars": "2997",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "jamiepine",
+        "name": "voicebox",
+        "full_name": "jamiepine/voicebox",
+        "description": "The open-source voice synthesis studio",
+        "language": "TypeScript",
+        "period_stars": "1162",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "pascalorg",
+        "name": "editor",
+        "full_name": "pascalorg/editor",
+        "description": "Create and share 3D architectural projects.",
+        "language": "TypeScript",
+        "period_stars": "820",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "microsoft",
+        "name": "markitdown",
+        "full_name": "microsoft/markitdown",
+        "description": "Python tool for converting files and office documents to Markdown.",
+        "language": "Python",
+        "period_stars": "1675",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "obra",
+        "name": "superpowers",
+        "full_name": "obra/superpowers",
+        "description": "An agentic skills framework &amp; software development methodology that works.",
+        "language": "Shell",
+        "period_stars": "1919",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "chrislgarry",
+        "name": "Apollo-11",
+        "full_name": "chrislgarry/Apollo-11",
+        "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+        "language": "Assembly",
+        "period_stars": "472",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "virattt",
+        "name": "ai-hedge-fund",
+        "full_name": "virattt/ai-hedge-fund",
+        "description": "An AI Hedge Fund Team",
+        "language": "Python",
+        "period_stars": "1007",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "shiyu-coder",
+        "name": "Kronos",
+        "full_name": "shiyu-coder/Kronos",
+        "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+        "language": "Python",
+        "period_stars": "963",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "NousResearch",
+        "name": "hermes-agent",
+        "full_name": "NousResearch/hermes-agent",
+        "description": "The agent that grows with you",
+        "language": "Python",
+        "period_stars": "8301",
+        "total_stars": "16",
+        "forks": "16"
+      }
+    ],
+    "weekly": [
+      {
+        "owner": "forrestchang",
+        "name": "andrej-karpathy-skills",
+        "full_name": "forrestchang/andrej-karpathy-skills",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+        "language": "Unknown",
+        "period_stars": "21795",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "NousResearch",
+        "name": "hermes-agent",
+        "full_name": "NousResearch/hermes-agent",
+        "description": "The agent that grows with you",
+        "language": "Python",
+        "period_stars": "52996",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "multica-ai",
+        "name": "multica",
+        "full_name": "multica-ai/multica",
+        "description": "The open-source managed agents platform. Turn coding agents into real teammates \u2014 assign tasks, track progress, compound skills.",
+        "language": "TypeScript",
+        "period_stars": "9823",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "coleam00",
+        "name": "Archon",
+        "full_name": "coleam00/Archon",
+        "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
+        "language": "TypeScript",
+        "period_stars": "4024",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "HKUDS",
+        "name": "DeepTutor",
+        "full_name": "HKUDS/DeepTutor",
+        "description": "\"DeepTutor: Agent-Native Personalized Learning Assistant\"",
+        "language": "Python",
+        "period_stars": "6401",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "microsoft",
+        "name": "markitdown",
+        "full_name": "microsoft/markitdown",
+        "description": "Python tool for converting files and office documents to Markdown.",
+        "language": "Python",
+        "period_stars": "14615",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "google-ai-edge",
+        "name": "gallery",
+        "full_name": "google-ai-edge/gallery",
+        "description": "A gallery that showcases on-device ML/GenAI use cases and allows people to try and use models locally.",
+        "language": "Kotlin",
+        "period_stars": "2671",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "thedotmack",
+        "name": "claude-mem",
+        "full_name": "thedotmack/claude-mem",
+        "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions.",
+        "language": "TypeScript",
+        "period_stars": "8742",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "TapXWorld",
+        "name": "ChinaTextbook",
+        "full_name": "TapXWorld/ChinaTextbook",
+        "description": "\u6240\u6709\u5c0f\u521d\u9ad8\u3001\u5927\u5b66PDF\u6559\u6750\u3002",
+        "language": "Roff",
+        "period_stars": "2561",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "TheCraigHewitt",
+        "name": "seomachine",
+        "full_name": "TheCraigHewitt/seomachine",
+        "description": "A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.",
+        "language": "Python",
+        "period_stars": "2562",
+        "total_stars": "16",
+        "forks": "16"
+      }
+    ],
+    "monthly": [
+      {
+        "owner": "NousResearch",
+        "name": "hermes-agent",
+        "full_name": "NousResearch/hermes-agent",
+        "description": "The agent that grows with you",
+        "language": "Python",
+        "period_stars": "76339",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "mattpocock",
+        "name": "skills",
+        "full_name": "mattpocock/skills",
+        "description": "My personal directory of skills, straight from my .claude directory.",
+        "language": "Shell",
+        "period_stars": "13952",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "Crosstalk-Solutions",
+        "name": "project-nomad",
+        "full_name": "Crosstalk-Solutions/project-nomad",
+        "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered\u2014anytime, anywhere.",
+        "language": "TypeScript",
+        "period_stars": "23194",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "FujiwaraChoki",
+        "name": "MoneyPrinterV2",
+        "full_name": "FujiwaraChoki/MoneyPrinterV2",
+        "description": "Automate the process of making money online.",
+        "language": "Python",
+        "period_stars": "14719",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "siddharthvaddem",
+        "name": "openscreen",
+        "full_name": "siddharthvaddem/openscreen",
+        "description": "Create stunning demos for free. Open-source, no subscriptions, no watermarks, and free for commercial use. An alternative to Screen Studio.",
+        "language": "TypeScript",
+        "period_stars": "21866",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "bytedance",
+        "name": "deer-flow",
+        "full_name": "bytedance/deer-flow",
+        "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+        "language": "Python",
+        "period_stars": "31482",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "jarrodwatts",
+        "name": "claude-hud",
+        "full_name": "jarrodwatts/claude-hud",
+        "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
+        "language": "JavaScript",
+        "period_stars": "14720",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "mvanhorn",
+        "name": "last30days-skill",
+        "full_name": "mvanhorn/last30days-skill",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+        "language": "Python",
+        "period_stars": "17814",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "google-ai-edge",
+        "name": "gallery",
+        "full_name": "google-ai-edge/gallery",
+        "description": "A gallery that showcases on-device ML/GenAI use cases and allows people to try and use models locally.",
+        "language": "Kotlin",
+        "period_stars": "5745",
+        "total_stars": "16",
+        "forks": "16"
+      },
+      {
+        "owner": "affaan-m",
+        "name": "everything-claude-code",
+        "full_name": "affaan-m/everything-claude-code",
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "language": "JavaScript",
+        "period_stars": "81407",
+        "total_stars": "16",
+        "forks": "16"
+      }
+    ]
+  },
+  "cross_reference": [
+    {
+      "full_name": "microsoft/markitdown",
+      "timeframes": [
+        "today",
+        "weekly"
+      ]
+    },
+    {
+      "full_name": "NousResearch/hermes-agent",
+      "timeframes": [
+        "today",
+        "weekly",
+        "monthly"
+      ]
+    },
+    {
+      "full_name": "google-ai-edge/gallery",
+      "timeframes": [
+        "weekly",
+        "monthly"
+      ]
+    },
+    {
+      "full_name": "thedotmack/claude-mem",
+      "timeframes": [
+        "today",
+        "weekly"
+      ]
+    },
+    {
+      "full_name": "forrestchang/andrej-karpathy-skills",
+      "timeframes": [
+        "today",
+        "weekly"
+      ]
+    }
+  ],
+  "language_breakdown": {
+    "TypeScript": {
+      "count": 8,
+      "repos": [
+        {
+          "name": "thedotmack/claude-mem",
+          "period": "today"
+        },
+        {
+          "name": "jamiepine/voicebox",
+          "period": "today"
+        },
+        {
+          "name": "pascalorg/editor",
+          "period": "today"
+        },
+        {
+          "name": "multica-ai/multica",
+          "period": "weekly"
+        },
+        {
+          "name": "coleam00/Archon",
+          "period": "weekly"
+        },
+        {
+          "name": "thedotmack/claude-mem",
+          "period": "weekly"
+        },
+        {
+          "name": "Crosstalk-Solutions/project-nomad",
+          "period": "monthly"
+        },
+        {
+          "name": "siddharthvaddem/openscreen",
+          "period": "monthly"
+        }
+      ]
+    },
+    "Python": {
+      "count": 12,
+      "repos": [
+        {
+          "name": "microsoft/markitdown",
+          "period": "today"
+        },
+        {
+          "name": "virattt/ai-hedge-fund",
+          "period": "today"
+        },
+        {
+          "name": "shiyu-coder/Kronos",
+          "period": "today"
+        },
+        {
+          "name": "NousResearch/hermes-agent",
+          "period": "today"
+        },
+        {
+          "name": "NousResearch/hermes-agent",
+          "period": "weekly"
+        },
+        {
+          "name": "HKUDS/DeepTutor",
+          "period": "weekly"
+        },
+        {
+          "name": "microsoft/markitdown",
+          "period": "weekly"
+        },
+        {
+          "name": "TheCraigHewitt/seomachine",
+          "period": "weekly"
+        },
+        {
+          "name": "NousResearch/hermes-agent",
+          "period": "monthly"
+        },
+        {
+          "name": "FujiwaraChoki/MoneyPrinterV2",
+          "period": "monthly"
+        },
+        {
+          "name": "bytedance/deer-flow",
+          "period": "monthly"
+        },
+        {
+          "name": "mvanhorn/last30days-skill",
+          "period": "monthly"
+        }
+      ]
+    },
+    "Shell": {
+      "count": 2,
+      "repos": [
+        {
+          "name": "obra/superpowers",
+          "period": "today"
+        },
+        {
+          "name": "mattpocock/skills",
+          "period": "monthly"
+        }
+      ]
+    },
+    "Assembly": {
+      "count": 1,
+      "repos": [
+        {
+          "name": "chrislgarry/Apollo-11",
+          "period": "today"
+        }
+      ]
+    },
+    "Kotlin": {
+      "count": 2,
+      "repos": [
+        {
+          "name": "google-ai-edge/gallery",
+          "period": "weekly"
+        },
+        {
+          "name": "google-ai-edge/gallery",
+          "period": "monthly"
+        }
+      ]
+    },
+    "Roff": {
+      "count": 1,
+      "repos": [
+        {
+          "name": "TapXWorld/ChinaTextbook",
+          "period": "weekly"
+        }
+      ]
+    },
+    "JavaScript": {
+      "count": 2,
+      "repos": [
+        {
+          "name": "jarrodwatts/claude-hud",
+          "period": "monthly"
+        },
+        {
+          "name": "affaan-m/everything-claude-code",
+          "period": "monthly"
+        }
+      ]
+    }
+  }
+}
