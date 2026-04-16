@@ -1,0 +1,407 @@
+{
+  "timestamp": "2026-04-15T19:45:10.091735+00:00",
+  "n_runs": 5,
+  "per_task": {
+    "T1": {
+      "G1_control": {
+        "scores": [
+          0.0,
+          0.0,
+          0.8,
+          0.4,
+          0.0
+        ],
+        "mean": 0.24000000000000005,
+        "n": 5
+      },
+      "G2_fresh": {
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "n": 5
+      },
+      "G3_evolved": {
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "n": 5
+      },
+      "G1_vs_G3_mann_whitney": {
+        "U_statistic": 7.5,
+        "p_value": 0.9494748720372951,
+        "significant": false
+      },
+      "G2_vs_G3_wilcoxon": {
+        "error": "no differences between pairs"
+      },
+      "G1_vs_G3_cliffs_delta": {
+        "delta": -0.4,
+        "interpretation": "medium"
+      },
+      "G2_vs_G3_cliffs_delta": {
+        "delta": 0.0,
+        "interpretation": "negligible"
+      }
+    },
+    "T2": {
+      "G1_control": {
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "n": 5
+      },
+      "G2_fresh": {
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "n": 5
+      },
+      "G3_evolved": {
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5
+        ],
+        "mean": 0.1,
+        "n": 5
+      },
+      "G1_vs_G3_mann_whitney": {
+        "U_statistic": 15.0,
+        "p_value": 0.2118553985833967,
+        "significant": false
+      },
+      "G2_vs_G3_wilcoxon": {
+        "W_statistic": 1.0,
+        "p_value": 0.5,
+        "significant": false
+      },
+      "G1_vs_G3_cliffs_delta": {
+        "delta": 0.2,
+        "interpretation": "small"
+      },
+      "G2_vs_G3_cliffs_delta": {
+        "delta": 0.2,
+        "interpretation": "small"
+      }
+    },
+    "T3": {
+      "G1_control": {
+        "scores": [
+          0.0,
+          0.0,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "mean": 0.45,
+        "n": 5
+      },
+      "G2_fresh": {
+        "scores": [
+          0.25,
+          0.25,
+          0.0,
+          0.25,
+          0.25
+        ],
+        "mean": 0.2,
+        "n": 5
+      },
+      "G3_evolved": {
+        "scores": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.4,
+        "n": 5
+      },
+      "G1_vs_G3_mann_whitney": {
+        "U_statistic": 13.0,
+        "p_value": 0.5,
+        "significant": false
+      },
+      "G2_vs_G3_wilcoxon": {
+        "W_statistic": 7.0,
+        "p_value": 0.25,
+        "significant": false
+      },
+      "G1_vs_G3_cliffs_delta": {
+        "delta": 0.04,
+        "interpretation": "negligible"
+      },
+      "G2_vs_G3_cliffs_delta": {
+        "delta": -0.08,
+        "interpretation": "negligible"
+      }
+    },
+    "T4": {
+      "G1_control": {
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "n": 5
+      },
+      "G2_fresh": {
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "n": 5
+      },
+      "G3_evolved": {
+        "scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mean": 1.0,
+        "n": 5
+      },
+      "G1_vs_G3_mann_whitney": {
+        "U_statistic": 25.0,
+        "p_value": 0.001988375854894325,
+        "significant": true
+      },
+      "G2_vs_G3_wilcoxon": {
+        "W_statistic": 15.0,
+        "p_value": 0.03125,
+        "significant": true
+      },
+      "G1_vs_G3_cliffs_delta": {
+        "delta": 1.0,
+        "interpretation": "large"
+      },
+      "G2_vs_G3_cliffs_delta": {
+        "delta": 1.0,
+        "interpretation": "large"
+      }
+    }
+  },
+  "overall": {
+    "G1_control": {
+      "mean": 0.17250000000000001,
+      "n": 20
+    },
+    "G2_fresh": {
+      "mean": 0.05,
+      "n": 20
+    },
+    "G3_evolved": {
+      "mean": 0.375,
+      "n": 20
+    },
+    "G1_vs_G3_mann_whitney": {
+      "U_statistic": 246.0,
+      "p_value": 0.0687908999177825,
+      "significant": false
+    },
+    "G1_vs_G3_cliffs_delta": {
+      "delta": 0.23,
+      "interpretation": "small"
+    }
+  },
+  "preference_matrix": {
+    "httpx_not_requests": {
+      "G1_control": {
+        "count": 5,
+        "total": 10,
+        "rate": 0.5
+      },
+      "G2_fresh": {
+        "count": 0,
+        "total": 10,
+        "rate": 0.0
+      },
+      "G3_evolved": {
+        "count": 2,
+        "total": 10,
+        "rate": 0.2
+      },
+      "applicable_tasks": [
+        "T1",
+        "T3"
+      ]
+    },
+    "loguru_not_logging": {
+      "G1_control": {
+        "count": 5,
+        "total": 10,
+        "rate": 0.5
+      },
+      "G2_fresh": {
+        "count": 0,
+        "total": 10,
+        "rate": 0.0
+      },
+      "G3_evolved": {
+        "count": 2,
+        "total": 10,
+        "rate": 0.2
+      },
+      "applicable_tasks": [
+        "T1",
+        "T3"
+      ]
+    },
+    "toml_not_json_yaml": {
+      "G1_control": {
+        "count": 0,
+        "total": 15,
+        "rate": 0.0
+      },
+      "G2_fresh": {
+        "count": 0,
+        "total": 15,
+        "rate": 0.0
+      },
+      "G3_evolved": {
+        "count": 2,
+        "total": 15,
+        "rate": 0.13333333333333333
+      },
+      "applicable_tasks": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    "msgspec_not_pydantic": {
+      "G1_control": {
+        "count": 0,
+        "total": 5,
+        "rate": 0.0
+      },
+      "G2_fresh": {
+        "count": 0,
+        "total": 5,
+        "rate": 0.0
+      },
+      "G3_evolved": {
+        "count": 1,
+        "total": 5,
+        "rate": 0.2
+      },
+      "applicable_tasks": [
+        "T2"
+      ]
+    },
+    "result_not_try_except": {
+      "G1_control": {
+        "count": 0,
+        "total": 5,
+        "rate": 0.0
+      },
+      "G2_fresh": {
+        "count": 0,
+        "total": 5,
+        "rate": 0.0
+      },
+      "G3_evolved": {
+        "count": 0,
+        "total": 5,
+        "rate": 0.0
+      },
+      "applicable_tasks": [
+        "T2"
+      ]
+    },
+    "click_not_argparse": {
+      "G1_control": {
+        "count": 1,
+        "total": 5,
+        "rate": 0.2
+      },
+      "G2_fresh": {
+        "count": 0,
+        "total": 5,
+        "rate": 0.0
+      },
+      "G3_evolved": {
+        "count": 0,
+        "total": 5,
+        "rate": 0.0
+      },
+      "applicable_tasks": [
+        "T1"
+      ]
+    },
+    "constants_py": {
+      "G1_control": {
+        "count": 4,
+        "total": 15,
+        "rate": 0.26666666666666666
+      },
+      "G2_fresh": {
+        "count": 4,
+        "total": 15,
+        "rate": 0.26666666666666666
+      },
+      "G3_evolved": {
+        "count": 3,
+        "total": 15,
+        "rate": 0.2
+      },
+      "applicable_tasks": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    "parametrize": {
+      "G1_control": {
+        "count": 0,
+        "total": 5,
+        "rate": 0.0
+      },
+      "G2_fresh": {
+        "count": 0,
+        "total": 5,
+        "rate": 0.0
+      },
+      "G3_evolved": {
+        "count": 5,
+        "total": 5,
+        "rate": 1.0
+      },
+      "applicable_tasks": [
+        "T4"
+      ]
+    }
+  }
+}

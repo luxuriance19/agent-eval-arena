@@ -1,0 +1,168 @@
+{
+  "httpx_not_requests": {
+    "G1_control": {
+      "count": 5,
+      "total": 10,
+      "rate": 0.5
+    },
+    "G2_fresh": {
+      "count": 0,
+      "total": 10,
+      "rate": 0.0
+    },
+    "G3_evolved": {
+      "count": 2,
+      "total": 10,
+      "rate": 0.2
+    },
+    "applicable_tasks": [
+      "T1",
+      "T3"
+    ]
+  },
+  "loguru_not_logging": {
+    "G1_control": {
+      "count": 5,
+      "total": 10,
+      "rate": 0.5
+    },
+    "G2_fresh": {
+      "count": 0,
+      "total": 10,
+      "rate": 0.0
+    },
+    "G3_evolved": {
+      "count": 2,
+      "total": 10,
+      "rate": 0.2
+    },
+    "applicable_tasks": [
+      "T1",
+      "T3"
+    ]
+  },
+  "toml_not_json_yaml": {
+    "G1_control": {
+      "count": 0,
+      "total": 15,
+      "rate": 0.0
+    },
+    "G2_fresh": {
+      "count": 0,
+      "total": 15,
+      "rate": 0.0
+    },
+    "G3_evolved": {
+      "count": 2,
+      "total": 15,
+      "rate": 0.13333333333333333
+    },
+    "applicable_tasks": [
+      "T1",
+      "T2",
+      "T3"
+    ]
+  },
+  "msgspec_not_pydantic": {
+    "G1_control": {
+      "count": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "G2_fresh": {
+      "count": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "G3_evolved": {
+      "count": 1,
+      "total": 5,
+      "rate": 0.2
+    },
+    "applicable_tasks": [
+      "T2"
+    ]
+  },
+  "result_not_try_except": {
+    "G1_control": {
+      "count": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "G2_fresh": {
+      "count": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "G3_evolved": {
+      "count": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "applicable_tasks": [
+      "T2"
+    ]
+  },
+  "click_not_argparse": {
+    "G1_control": {
+      "count": 1,
+      "total": 5,
+      "rate": 0.2
+    },
+    "G2_fresh": {
+      "count": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "G3_evolved": {
+      "count": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "applicable_tasks": [
+      "T1"
+    ]
+  },
+  "constants_py": {
+    "G1_control": {
+      "count": 4,
+      "total": 15,
+      "rate": 0.26666666666666666
+    },
+    "G2_fresh": {
+      "count": 4,
+      "total": 15,
+      "rate": 0.26666666666666666
+    },
+    "G3_evolved": {
+      "count": 3,
+      "total": 15,
+      "rate": 0.2
+    },
+    "applicable_tasks": [
+      "T1",
+      "T2",
+      "T3"
+    ]
+  },
+  "parametrize": {
+    "G1_control": {
+      "count": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "G2_fresh": {
+      "count": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "G3_evolved": {
+      "count": 5,
+      "total": 5,
+      "rate": 1.0
+    },
+    "applicable_tasks": [
+      "T4"
+    ]
+  }
+}
