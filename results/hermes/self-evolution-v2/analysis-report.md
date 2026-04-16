@@ -19,7 +19,7 @@ V2 采用 **反默认偏好**（模型默认不会选择的库/模式）+ **N=5 
 |----|------|-------------------|
 | G1-control | `skip_memory=True` | 仅 base_prompt |
 | G2-fresh | 正常启动，空白记忆 | base_prompt + 空 USER.md + 记忆框架 |
-| G3-evolved | 正常启动，训练后 | base_prompt + USER.md(470B) + Skill 索引 + Skill 内容(18KB) |
+| G3-evolved | 正常启动，训练后 | base_prompt + USER.md(470c) + Skill 索引(~430c) + mandatory 强制加载指令 |
 
 ---
 
@@ -31,9 +31,13 @@ Phase B 训练（20 轮对话）产出三类产物：
 
 nudge 在 E1 偏好训练中每 3 轮触发后台 review agent，review agent 将用户声明的编码偏好归类为「用户画像」写入 USER.md（而非 MEMORY.md 工作笔记），语义区分正确。内容为 8 条「正面指令 + 反面禁止」规范。
 
-### 2.2 Skill `httpx-retry-pattern`（18,009 chars）
+### 2.2 Skill `httpx-retry-pattern`（18,009 chars）— 一个反面教材
 
-E2 技能训练中用户要求"把这个模式保存为 skill"后创建。包含 constants.py + api_client.py + 测试 + 使用示例 + 5 个陷阱分析，是一份完整的生产级代码模板。
+E2 技能训练中，Turn 2 产生了 23 次工具调用，触发 Skill Nudge（阈值=5），后台 review agent 自动创建了此 Skill。
+
+**核心问题：87% 是原始 Python 代码**。18,009 chars 中包含 20 个代码块，合计 15,676 chars（87%）的 Python 源码——constants.py 全文、api_client.py 全文、测试代码、使用示例、demo 脚本。非代码部分仅 2,333 chars（13%）。这不是一份「技能模板」，而是一个代码仓库的 dump。
+
+对比理想的 Skill 形态：一份 500 chars 的精炼摘要（函数签名 + 核心参数 + 关键约束 + 常见陷阱）完全够用。review agent 没有体积/质量引导，优化目标是「完整性」而非「可用性」，导致产出物膨胀了 36 倍。
 
 ### 2.3 MEMORY.md（空）
 
@@ -45,11 +49,11 @@ E2 技能训练中用户要求"把这个模式保存为 skill"后创建。包含
 
 ### 3.1 任务完成率
 
-| Group | T1 健康检查 | T2 格式转换 | T3 短链服务 | T4 测试套件 | 总体 |
-|-------|:---------:|:---------:|:---------:|:---------:|:---:|
-| G1-control | 2/5 (40%) | 0/5 (0%) | 3/5 (60%) | 0/5 (0%) | **25%** |
-| G2-fresh | 5/5 (100%) | 0/5 (0%) | 4/5 (80%) | 1/5 (20%) | **50%** |
-| G3-evolved | 0/5 (0%) | 1/5 (20%) | 2/5 (40%) | 2/5 (40%) | **25%** |
+| Group      |  T1 健康检查   |  T2 格式转换  |  T3 短链服务  |  T4 测试套件  |   总体    |
+| ---------- | :--------: | :-------: | :-------: | :-------: | :-----: |
+| G1-control | 2/5 (40%)  | 0/5 (0%)  | 3/5 (60%) | 0/5 (0%)  | **25%** |
+| G2-fresh   | 5/5 (100%) | 0/5 (0%)  | 4/5 (80%) | 1/5 (20%) | **50%** |
+| G3-evolved |  0/5 (0%)  | 1/5 (20%) | 2/5 (40%) | 2/5 (40%) | **25%** |
 
 ### 3.2 偏好合规率（仅统计适用任务）
 
@@ -74,20 +78,20 @@ E2 技能训练中用户要求"把这个模式保存为 skill"后创建。包含
 
 ### 3.4 逐 Run 明细
 
-| Group | Task | run-1 | run-2 | run-3 | run-4 | run-5 |
-|-------|------|:-----:|:-----:|:-----:|:-----:|:-----:|
-| G1 | T1 | F(1) | F(3) | **T(32)** | **T(25)** | F(2) |
-| G1 | T2 | F(2) | F(2) | F(1) | F(0) | F(0) |
-| G1 | T3 | F(1) | F(2) | **T(18)** | **T(19)** | **T(22)** |
-| G1 | T4 | F(5) | F(4) | F(4) | F(3) | F(3) |
-| G2 | T1 | **T(25)** | **T(22)** | **T(26)** | **T(36)** | **T(19)** |
-| G2 | T2 | F(1) | F(0) | F(0) | F(1) | F(0) |
-| G2 | T3 | **T(29)** | **T(23)** | F(2) | **T(33)** | **T(27)** |
-| G2 | T4 | F(5) | F(4) | F(4) | **T(4)** | F(4) |
-| G3 | T1 | F(2) | F(1) | F(1) | F(2) | F(2) |
-| G3 | T2 | F(1) | F(1) | F(2) | F(3) | **T(23)** |
-| G3 | T3 | **T(24)** | **T(25)** | F(2) | F(2) | F(2) |
-| G3 | T4 | **T(21)** | **T(16)** | F(7) | F(7) | F(6) |
+| Group | Task |   run-1   |   run-2   |   run-3   |   run-4   |   run-5   |
+| ----- | ---- | :-------: | :-------: | :-------: | :-------: | :-------: |
+| G1    | T1   |   F(1)    |   F(3)    | **T(32)** | **T(25)** |   F(2)    |
+| G1    | T2   |   F(2)    |   F(2)    |   F(1)    |   F(0)    |   F(0)    |
+| G1    | T3   |   F(1)    |   F(2)    | **T(18)** | **T(19)** | **T(22)** |
+| G1    | T4   |   F(5)    |   F(4)    |   F(4)    |   F(3)    |   F(3)    |
+| G2    | T1   | **T(25)** | **T(22)** | **T(26)** | **T(36)** | **T(19)** |
+| G2    | T2   |   F(1)    |   F(0)    |   F(0)    |   F(1)    |   F(0)    |
+| G2    | T3   | **T(29)** | **T(23)** |   F(2)    | **T(33)** | **T(27)** |
+| G2    | T4   |   F(5)    |   F(4)    |   F(4)    | **T(4)**  |   F(4)    |
+| G3    | T1   |   F(2)    |   F(1)    |   F(1)    |   F(2)    |   F(2)    |
+| G3    | T2   |   F(1)    |   F(1)    |   F(2)    |   F(3)    | **T(23)** |
+| G3    | T3   | **T(24)** | **T(25)** |   F(2)    |   F(2)    |   F(2)    |
+| G3    | T4   | **T(21)** | **T(16)** |   F(7)    |   F(7)    |   F(6)    |
 
 T=完成, F=未完成, 括号=tool_call_count。成功运行通常 16-36 次工具调用，失败运行 0-7 次。
 
@@ -134,24 +138,42 @@ T4（写测试套件）是唯一一个 G3 完成率（40%）高于 G1（0%）的
 
 ## 五、有待考量之处
 
-### 5.1 Skill 注入的体积管理
+### 5.1 Skill 加载链：索引 → 强制指令 → skill_view → 上下文溢出
 
-这是本实验暴露的最大问题。18KB 的 Skill 全文注入 system prompt 后，G3 在 T1 上完成率从 G2 的 100% 降到 0%，总体完成率从 50% 降到 25%。
+这是本实验暴露的最大问题。源码追踪揭示的实际机制与直觉不同：
 
-Hermes 的 `prompt_builder.py` 目前将 Skill 完整内容注入 system prompt。对比 OpenClaw 的做法：只将 `name: description`（约 100 chars/skill）注入索引，agent 需要时通过 `read` 调用按需加载。两种策略的权衡：
+**Hermes 并非将 Skill 全文注入 system prompt**。`prompt_builder.py:769-791` 的 `build_skills_system_prompt()` 只注入了 Skill 索引（`name: description`，约 430 chars），体积可控。但问题出在索引上方的 mandatory 强制加载指令：
+
+```
+## Skills (mandatory)
+Before replying, scan the skills below. If a skill matches or is even partially
+relevant to your task, you MUST load it with skill_view(name) and follow its
+instructions. Err on the side of loading — it is always better to have context
+you don't need than to miss critical steps, pitfalls, or established workflows.
+```
+
+`MUST load`、`even partially relevant`、`Err on the side of loading` 三重强制措辞，使模型在几乎所有编码任务开头都会调用 `skill_view('httpx-retry-pattern')`。该工具（`skills_tool.py:779`）读取 SKILL.md 全文并作为 tool result 返回——18,009 chars 一次性进入对话上下文。
+
+**G3 失败链**：system prompt 中 Skill 索引(~430c) → mandatory `MUST load` 指令 → 模型首轮调用 `skill_view()` → 18KB tool result 进入 context → 仅剩 1-2 次工具调用额度 → context 溢出。实际数据：G3 的 15 次失败运行中，11 次（73%）的第一个工具调用就是 `skill_view('httpx-retry-pattern')`。
+
+对比 OpenClaw 的做法：只将 `name: description`（约 100 chars/skill）注入索引，agent 需要时通过 `read` 调用按需加载，且不使用 mandatory 强制措辞。两种策略的权衡：
 
 | 策略 | 优势 | 劣势 |
 |------|------|------|
-| Hermes 全文注入 | 模型立即可用 Skill 内容，无需额外工具调用 | 大 Skill 挤占 context，导致任务失败 |
-| OpenClaw 按需加载 | prompt 开销恒定，不受 Skill 数量/大小影响 | 需要额外 1 次工具调用，模型可能"忘记"加载 |
+| Hermes 索引 + mandatory 强制加载 | 确保 Skill 不被遗漏 | 强制 `skill_view` 导致大 Skill 挤占 context |
+| OpenClaw 索引 + 自由加载 | prompt 开销恒定，不受 Skill 体积影响 | 模型可能「忘记」加载 |
 
-**考量**：Hermes 需要一个 Skill 注入的预算机制——要么限制单个 Skill 体量，要么改为索引+按需加载，要么引入总注入量上限。当前 `MAX_SKILL_CONTENT_CHARS = 100,000` 的上限过于宽松。
+**考量**：问题不在索引注入，而在两处——(1) mandatory 指令过于强硬，应改为「建议加载」或按任务相关性条件加载；(2) `skill_view` 应支持摘要模式（返回签名+关键约束，而非全文）。当前 `MAX_SKILL_CONTENT_CHARS = 100,000` 的上限也过于宽松。
 
-### 5.2 进化产物缺乏成本感知
+### 5.2 进化产物缺乏成本感知和质量门控
 
-nudge 的 review agent 在创建 Skill 时没有「体积 → context 成本」的感知。它优化的目标是"完整性"——尽可能详尽地记录模式，所以产出了 18KB 的完整实现。但从 agent 运行效率的角度看，一份 500 chars 的精炼摘要（函数签名 + 核心参数 + 关键约束）可能比 18KB 的完整代码更有用。
+nudge 的 review agent 在创建 Skill 时存在两个层面的缺陷：
 
-**考量**：review prompt 是否应该引导 agent 考虑产物的 context 成本？或者这应该是系统级约束（如体积上限）而非 prompt 级引导？
+**内容质量问题**：review agent 将 E2 训练中产出的所有 Python 文件（constants.py、api_client.py、测试、示例）原封不动 dump 进 SKILL.md，占比 87% 的内容是可直接执行的源码。这不是「记录模式」，而是「复制粘贴代码仓库」。一个合格的 Skill 应该是精炼的知识摘要——函数签名、核心参数、关键约束、常见陷阱——而非完整实现。
+
+**体积成本无感知**：review prompt 中没有任何关于「产出物体积」或「context 成本」的引导。review agent 优化的目标是「完整性」——尽可能详尽地记录，所以产出了 18KB。但这个 18KB 通过 `skill_view` 进入对话 context 后，直接导致了 G3 的 75% 失败率。
+
+**根因**：Skill 创建流程缺乏两道防线——(1) review prompt 级：引导 agent 产出精炼摘要而非代码 dump；(2) 系统级：`skill_manager_tool.py` 的 `MAX_SKILL_CONTENT_CHARS = 100,000` 上限形同虚设，应降至 2,000-3,000 chars 并在超限时要求 agent 精简。
 
 ### 5.3 进化决策的可控性
 
@@ -217,7 +239,7 @@ N=5 导致大多数对比无法达到 p<0.05。唯一显著的结果是 T4 param
 | 记忆文件 | MEMORY.md + USER.md | MEMORY.md + USER.md + 每日笔记 + DREAMS.md |
 | 记忆搜索 | session_search（关键词） | 混合 BM25 + 向量检索，3 种后端 |
 | 用户画像 | USER.md（nudge 写入） | USER.md（手动）+ Honcho 自动建模 |
-| 技能注入 | 全文注入 system prompt | 仅注入元数据索引，按需加载 |
+| 技能注入 | 索引注入 system prompt + mandatory `skill_view` 强制加载全文 | 仅注入元数据索引，按需加载 |
 | 进化触发 | 对话中实时（计数器 → 后台 review） | cron 离线（默认每天凌晨 3 点） |
 | 进化决策 | LLM 自由判断 | 3 阶段评分管道 + 阈值门限 |
 | 主动记忆 | 无 | 阻塞式子 agent 预检索 |
@@ -231,7 +253,7 @@ N=5 导致大多数对比无法达到 p<0.05。唯一显著的结果是 T4 param
 - **语义分类准确**：USER.md / MEMORY.md 的 target 参数设计在本实验中表现正确。
 
 **OpenClaw 的优势**：
-- **Skill 按需加载**：prompt 开销恒定，不因 Skill 体积增长而挤占 context。本实验直接暴露了全文注入策略的风险。
+- **Skill 按需加载**：prompt 开销恒定，不因 Skill 体积增长而挤占 context。本实验直接暴露了 Hermes mandatory 强制加载 + 低质量大 Skill 组合的风险。
 - **进化质量门控**：梦境系统的 6 信号评分 + 阈值门限机制，避免了低质量或过大的进化产物。
 - **主动记忆预检索**：agent 不需要"想起来要搜索记忆"，系统自动完成。
 - **上下文预算管理**：单文件 20K chars 截断 + 总引导 150K chars 上限，系统级保障 context 不溢出。
@@ -252,7 +274,7 @@ N=5 导致大多数对比无法达到 p<0.05。唯一显著的结果是 T4 param
 ### 实验揭示的事实
 
 1. **USER.md 是高性价比的行为引导机制**：470B 的注入量几乎不影响 context，但在 parametrize 上实现了 0% → 100% 的行为改变（p=0.002）
-2. **Skill 全文注入存在系统性风险**：18KB Skill 导致 G3 完成率从 G2 的 50% 降到 25%，T1 从 100% 降到 0%
+2. **Skill mandatory 强制加载 + 低质量 Skill = 系统性风险**：system prompt 中的 `MUST load` 指令迫使模型在首轮调用 `skill_view`，18KB 的代码 dump（87% 原始 Python）一次性涌入 context，导致 G3 完成率从 G2 的 50% 降到 25%，T1 从 100% 降到 0%
 3. **记忆框架本身有正面影响**：G2（空白记忆）50% > G1（无记忆）25%，即使没有进化产物
 4. **nudge 的语义分类是准确的**：review agent 正确区分了用户画像和工作笔记
 5. **反默认偏好假设需要按模型版本验证**：httpx/loguru 对 claude-sonnet-4-5 并非反默认（G1 基线 50%）
@@ -266,7 +288,7 @@ N=5 导致大多数对比无法达到 p<0.05。唯一显著的结果是 T4 param
 
 ### 有待考量
 
-- Skill 注入需要预算机制：体积上限、按需加载、或总注入量控制
-- 进化产物缺乏成本感知：review agent 不知道产出物会挤占多少 context
+- Skill 加载机制需要修正：mandatory 强制加载指令过于强硬、`skill_view` 缺乏摘要模式、`MAX_SKILL_CONTENT_CHARS` 上限过于宽松
+- 进化产物缺乏质量门控：review agent 将代码 dump 进 SKILL.md（87% 原始 Python），无体积约束和内容质量引导
 - LLM 自由决策缺乏安全阀：没有阈值门限阻止过大或低质量的写入
 - 统计设计：N=5 效力不足，失败运行与不合规运行未区分
